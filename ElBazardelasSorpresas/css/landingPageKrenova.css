@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: left;
+    background: #d4a20c;
+    color: white;
+    font-size: 10px;
+}
+
+.nav {
+    text-align-last: right;
+}
