@@ -1,6 +1,5 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
 }
 
 .header {
@@ -11,6 +10,73 @@ body {
     font-size: 10px;
 }
 
-.nav {
-    text-align-last: right;
+select {
+    height: 30px;
+    width: 70px;
+}
+
+input {
+    height: 25px;
+    width: 500px;
+}
+
+.dv-search button {
+    height: 30px;
+    width: 25px;
+}
+
+.dv-search {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+nav {
+    border: 2px solid #000;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav div {
+    margin: 15px;
+}
+
+#sct-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-content img {
+    margin: 50px;
+}
+
+#sct-footer {
+    border: 3px solid #000;
+}
+
+#sct-footer .dv-contacto {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sct-footer a {
+    margin-left: 25px;
+}
+
+#sct-footer .dv-derechos {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
