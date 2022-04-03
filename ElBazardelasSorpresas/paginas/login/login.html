@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./login.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <main id="login">
-        Mi Login
-    </main>
-    <script src="./login.js"></script>
-</body>
-</html>
+<html>
+    <head>
+        <title>Ejemplo tula</title>
+        <link rel="stylesheet" href="./login.css"/>
+
+    </head>
+    <body >
+        <header>
+            <img id="logo" src="../../img/user.png"/>
+        </header>
+        <main>
+            <section id="login" class="floting-center">
+                <form id="loginForm">
+                    <fieldset>
+                        <input type="email" name="email" placeholder="Email" required/>
+                    </fieldset>
+                    <fieldset>
+                        <input id="pass" type="password" name="pass" placeholder="Contrase&ntilde;a" required/>
+                    </fieldset>
+                    <button type="submit">Ingresar</button>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="./login.js"></script>
+    </body>
+</html> 
