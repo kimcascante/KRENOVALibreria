@@ -2,35 +2,15 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header {
-    padding: 10px;
-    text-align: left;
-    background: #d4a20c;
-    color: white;
-    font-size: 10px;
-}
-
-select {
-    height: 30px;
-    width: 70px;
-}
-
-input {
-    height: 25px;
-    width: 500px;
-}
-
-.dv-search button {
-    height: 30px;
-    width: 25px;
-}
-
-.dv-search {
+#sct-top {
+    height: 50px;
+    padding-right: 50px;
     width: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid #000;
+    margin: 20px;
 }
 
 nav {
@@ -40,15 +20,23 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    margin: 40px;
+    background-color: #a20cd4;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 nav div {
     margin: 15px;
 }
 
-#sct-content {
-    display: flex;
-    flex-direction: column;
+#sct-content div {
+    display: grid;
+    grid-row: 2;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
