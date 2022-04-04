@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+#sct-content {
+    columns: 2;
+}
+
+#sct-content div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-registro {
+    margin: 30px;
+    display: flex;
+    flex-direction: flex;
+    justify-content: end;
+    align-items: center;
+}
