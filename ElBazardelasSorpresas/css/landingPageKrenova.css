@@ -21,7 +21,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     margin: 40px;
-    background-color: #a20cd4;
+    background-color: #d40ca2;
 }
 
 a {
@@ -47,6 +47,7 @@ nav div {
 
 #sct-footer {
     border: 3px solid #000;
+    background-color: #a20cd4;
 }
 
 #sct-footer .dv-contacto {
