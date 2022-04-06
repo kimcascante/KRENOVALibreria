@@ -54,3 +54,7 @@ nav div {
 #sct-content img {
     margin: 50px;
 }
+
+#dv-nav a:hover {
+    color: #efac43;
+}
