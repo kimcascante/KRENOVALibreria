@@ -1,21 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sct-top {
-    height: 50px;
-    padding-right: 50px;
-    width: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    width: auto;
     margin: 20px;
 }
 
-nav {
+#sct-nav {
     border: 2px solid #000;
     height: 50px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -27,45 +28,18 @@ nav {
 a {
     color: white;
     text-decoration: none;
-}
-
-nav div {
     margin: 15px;
 }
 
-#sct-content div {
-    display: grid;
-    grid-row: 2;
+#sct-content {
+    display: flex;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-left: 22px;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-}
-
-#sct-content img {
-    margin: 50px;
-}
-
-#sct-footer {
-    border: 3px solid #000;
-    background-color: #a20cd4;
-}
-
-#sct-footer .dv-contacto {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-#sct-footer a {
-    margin-left: 25px;
-}
-
-#sct-footer .dv-derechos {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
