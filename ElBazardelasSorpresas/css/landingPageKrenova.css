@@ -31,8 +31,9 @@ a {
     margin: 15px;
 }
 
-#sct-content {
-    display: flex;
+#sct-content div {
+    display: grid;
+    grid-row: 2;
     border-radius: 4px;
     padding: 15px;
     margin-bottom: 20px;
@@ -41,5 +42,50 @@ a {
     margin-left: 22px;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
+
+#dv-diego p {
+    width: 250px;
+}
+
+#dv-luisD p {
+    width: 250px;
+}
+
+#dv-juank p {
+    width: 250px;
+}
+
+#dv-kim p {
+    width: 250px;
+}
+
+#dv-ale p {
+    width: 250px;
+}
+
+#sct-footer {
+    border: 3px solid #000;
+    background-color: #a20cd4;
+}
+
+#sct-footer .dv-contacto {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sct-footer a {
+    margin-left: 25px;
+}
+
+#sct-footer .dv-derechos {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
