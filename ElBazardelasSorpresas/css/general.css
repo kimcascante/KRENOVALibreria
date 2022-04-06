@@ -38,6 +38,11 @@ body {
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #dv-nav a:hover {
     color: #d4a20c;
 }

@@ -1,0 +1,25 @@
+#sct-content div {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-content {
+    columns: 3;
+}
+
+#sct-content label {
+    padding: 2px;
+}
+
+#sct-content button {
+    background-color: #d4a20c;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#sct-content button:hover {
+    background-color: #d43e0c;
+}

@@ -1,6 +1,15 @@
-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
+    #sct-content div {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #sct-content {
+        columns: 3;
+    }
+    
+    #sct-content label {
+        padding: 2px;
+    }
