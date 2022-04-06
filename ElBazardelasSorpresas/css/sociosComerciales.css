@@ -1,0 +1,23 @@
+#sct-content div {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-content {
+    columns: 4;
+}
+
+#sct-content label {
+    padding: 2px;
+}
+
+h1 {
+    margin: 25px;
+}
+
+select {
+    width: 100px;
+}

@@ -1,0 +1,30 @@
+#sct-content div {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-content {
+    columns: 3;
+    grid-row: 2;
+}
+
+#sct-content label {
+    padding: 2px;
+}
+
+.dv-diez {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 20px;
+}
