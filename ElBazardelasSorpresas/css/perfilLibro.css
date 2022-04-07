@@ -1,0 +1,21 @@
+#sct-content div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sct-content {
+    height: 550px;
+    columns: 3;
+}
+
+#sct-content label {
+    padding: 2px;
+    margin: 10px;
+}
+
+select {
+    width: 35px;
+}
