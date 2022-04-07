@@ -68,6 +68,11 @@ a:hover {
     width: 250px;
 }
 
+#dv-mision {
+    text-align: center;
+    margin: 20px;
+}
+
 #sct-footer {
     background-color: #d43e0c;
 }
