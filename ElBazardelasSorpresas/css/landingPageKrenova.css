@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Verdana', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sct-top {
@@ -68,6 +68,8 @@ a {
 #dv-mision {
     text-align: center;
     margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #sct-footer {
