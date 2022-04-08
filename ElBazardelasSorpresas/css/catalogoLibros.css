@@ -7,9 +7,13 @@
     }
     
     #sct-content {
-        columns: 3;
+        columns: 2;
     }
     
     #sct-content label {
         padding: 2px;
+    }
+    
+    #lb-title {
+        font-weight: bold;
     }

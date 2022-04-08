@@ -12,12 +12,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #d43e0c;
+    background-color: #a20cd4;
 }
 
 #sct-footer {
-    border-top: 2px solid #d43e0c;
-    background-color: #d43e0c;
+    border-top: 2px solid #a20cd4;
+    background-color: #a20cd4;
 }
 
 #dv-landingPageKrenovadev a {
@@ -30,7 +30,7 @@ body {
 }
 
 #dv-nav {
-    background-color: #d43e0c;
+    background-color: #a20cd4;
 }
 
 #dv-nav a {
@@ -48,6 +48,7 @@ a {
 }
 
 #sct-footer .dv-contacto {
+    margin-left: 25px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -108,7 +109,4 @@ nav div {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
 }

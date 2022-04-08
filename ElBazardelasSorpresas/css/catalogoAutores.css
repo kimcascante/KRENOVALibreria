@@ -7,7 +7,7 @@
 }
 
 #sct-content {
-    columns: 3;
+    columns: 2;
 }
 
 #sct-content label {
@@ -15,6 +15,7 @@
 }
 
 #sct-content button {
+    margin: 25px;
     background-color: #d4a20c;
     border-radius: 5px;
     padding: 5px 10px;
@@ -22,4 +23,11 @@
 
 #sct-content button:hover {
     background-color: #d43e0c;
+}
+
+#sct-content img {
+    margin: 25px;
+    border-radius: 38px;
+    height: 250px;
+    width: 300px;
 }

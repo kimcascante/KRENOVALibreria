@@ -21,7 +21,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin: 40px;
-    background-color: #d43e0c;
+    background-color: #a20cd4;
 }
 
 a {
@@ -74,7 +74,7 @@ a:hover {
 }
 
 #sct-footer {
-    background-color: #d43e0c;
+    background-color: #a20cd4;
 }
 
 #sct-footer .dv-contacto {
