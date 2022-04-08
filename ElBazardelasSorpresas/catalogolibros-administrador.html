@@ -5,74 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width" , initial-scale=1.0 ">
+    <link rel="stylesheet " href="css/reset.css ">
+    <link rel="stylesheet " href="css/catalogolibros-administrador.css ">
     <title>Document</title>
 </head>
 <body>
-    <h1>Catálogo de Libros</h1>
+    <section id="sct-buscarlibros "> 
+        <div class="titulo-listadolibros ">
+            <h1>LISTADO DEL CATALOGO DE LIBROS</h1>
+        </div>
+    <form>
+        <div class="panel-buscalibro ">
+             <div class="titulo-buscalibro ">
+             <h1>Buscar en Catálogo de Libros</h1>
+            </div> 
+         
+            <div class="input-buscalibro ">
+                <label for="txtlibroIsbn ">ISBN</label>
+                <input type="text "id="txtlibroIsbn ">
+            </div>
 
-    <table> 
-        <tr>
-            <th>ISBN</th>
-            <td><input type="text "id="txtlibroIsbn "></td>
+            <div class="input-buscalibro ">
+                <label for="txtnombreLibro ">Nombre Libro</label>
+                <input type="text "id="txtnombreLibro ">
+            </div>
+                    
+            <div class="input-buscalibro ">
+                <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
+            </div>
+        </div> 
+    </form>
+    </section>
+        <hr>
+   <section id="sct-listarlibros ">
+        <h1>Items del inventario</h1>
 
-        </tr>
-        <tr>
-            <th>Nombre Libro</th>
-            <td><input type="text "id="txtnombreLibro "></td>
+        <table id='tbl-listarLibros'>
+                <thead>
+                  <tr>
+                    <th>Isbn</th>
+                    <th>Nombre Libro</th>
+                    <th>Autor/Autores</th>
+                    <th>Inventario actual</th>
+                 </tr>
 
-        </tr>
-        <tr>
-            <th>Inventario actual</th>
-            <td><input type="text "id="txtlibroInventarioact "></td>
+                </thead>
+            
+               <tbody>
+ 
+               </tbody>
+              <tfoot>
+                  <tr>
+                      <td>TOTAL DE REGISTROS: 3 ITEMS</td>
+                  </tr>
+                  
+              </tfoot>
+           
+        </table>
 
-        </tr>
-        <tr>
-            <th>Ajustar +/-</th>
-            <td><input type="number "id="txtlibroAjustar "></td>
 
-        </tr>
-        <tr>
-            <th>Inventario final</th>
-            <td><input type="number "id="txtlibroInventariofinal "></td>
+    </section>
+    <section id="sct-control ">
+        <form>
+          <div class="btn-control ">
+            <a href="utilitario catalogolibros-administrador.html " class=btn-listalibros>
+                <!--<i class="fa-solid fa-tags "></i>-->
+                <p>
+                    <strong>Nuevo</strong><br>
 
-        </tr>
-        <tr>
-        <tr>
-            <th>Modificar</th>
-            <td><input type="text "id="txtlibroModificar "></td>
+                </p>
+            </a>
+          </div>
+          <div class="btn-control ">
+            <a href="utilitario catalogolibros-administrador.html " class=btn-listalibros>
+                 <p>
+                    <strong>Modificar</strong><br>
 
-        </tr>
-        <tr>
-            <th>Eliminar</th>
-            <td><input type="text "id="txtlibroEliminar "></td>
+                </p>
+            </a>
+          </div>
+          <div class="btn-control ">
+            <a href="utilitario catalogolibros-administrador.html " class=btn-listalibros>
+                <p>
+                    <strong>Eliminar</strong><br>
 
-        </tr>
+                </p>
+            </a>
+         </div>
+     
 
-    </table>
-    <hr>
-    <table id="listarLibros ">
-        <tr>
-            <thead>
-                <th>ISBN</th>
-                <th>Nombre Libro</th>
-                <th>Inventario actual</th>
-                <th>Ajustar +/-</th>
-                <th>Inventario final</th>
-                <th>Modificar</th>
-                <th>Eliminar</th>
+       <!-- <div class="btn-control ">
+            <button type="button " id="btn-nuevolibro " class="btn-oscuro " onclick="href='panel-administrador.html' ">Nuevo</button>
+           
+        </div>
+        
+         <div class="btn-control ">
+            <button type="button " id="btn-modificarlibro " class="btn-oscuro " onclick="window.location.href='panel-administrador.html' ">Modificar</button>
+         </div>
 
-            </thead>
-        </tr>
+         <div class="btn-control ">
+            <button type="button " id="btn-eliminarlibro " class="btn-oscuro ">Eliminar</button>
+         </div>-->
 
-    </table>
-    
+        </form>
+    </section>
+        
 
 
     <a href="panel-administrador.html ">
-        <i class="fa-solid fa-tags "></i>
+    <i class="fa-solid fa-tags "></i>
         <p>
-            <strong>Regresar al Menu</strong><br>
+        <strong>Regresar al Menu</strong><br>
         </p>
     </a>
+    <script src="js/libros.js "></script>
+    <script src="js/listar-catalogolibros.js "></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
 </body>
 </html>
