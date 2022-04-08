@@ -21,7 +21,13 @@
 
             <div class="input-container">
                 <input id="txt-nombre" type="text" placeholder="Nombre">
+            </div>
 
+            <div>
+                <label for="slt-apellido">Apellidos</label>
+            </div>
+
+            <div class="input-container">
                 <input id="txt-apellido" type="text" placeholder="Apellido">
             </div>
 
@@ -32,8 +38,8 @@
             <div class="input-container">
                 <select id="slt-genero">
                     <option value="">Seleccione su género</option>
-                    <option value="1">Mujer</option>
-                    <option value="1">Hombre</option>
+                    <option value="1">Femenino</option>
+                    <option value="1">Masculino</option>
                     <option value="1">Otro</option>
                 </select>
             </div>
@@ -81,9 +87,26 @@
                 <option value="6">Puntarenas</option>
                 <option value="7">Limón</option>
                 </select>
+            </div>
 
-                <input id="txt-dia" type="text" placeholder="Cantón">
-                <input id="txt-anno" type="text" placeholder="Distrito">
+            <div>
+                <label for="txt-canton">Cantón</label>
+            </div>
+
+            <div class="input-container">
+                <input id="txt-canton" type="text">
+            </div>
+
+            <div>
+                <label for="txt-distrito">Distrito</label>
+            </div>
+
+            <div class="input-container">
+                <input id="txt-distrito" type="text">
+            </div>
+
+            <div class="input-container">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Solicitar</button>
             </div>
 
 
@@ -92,6 +115,8 @@
 
 
     </section>
+
+    <script src="js/solicitudMembresiaJS.js"></script>
 
 </body>
 
