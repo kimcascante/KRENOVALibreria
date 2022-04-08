@@ -7,9 +7,9 @@ const inputEdad = document.getElementById('txt-edad');
 const inputCorreo = document.getElementById('txt-email');
 const inputTelefono = document.getElementById('txt-telefono');
 const inputDomicilio = document.getElementById('txt-direccion');
-const listaProvincia = document.getElementById('slt-provincia');
-const inputCanton = document.getElementById('txt-canton');
-const inputDistrito = document.getElementById('txt-distrito');
+const listaProvincia = document.getElementById('slt-provincias');
+const inputCanton = document.getElementById('slt-cantones');
+const inputDistrito = document.getElementById('slt-distritos');
 
 // A crear la funcion de flecha "imprimir" para saber si la coneccion con el HTML funciona bien
 const imprimir = () => {
@@ -20,7 +20,7 @@ const imprimir = () => {
     let correo = inputCorreo.value;
     let telefono = inputTelefono.value;
     let domicilio = inputDomicilio.value;
-    let provincia = listaProvincia.value;
+    let provincias = listaProvincias.value;
     let canton = inputCanton.value;
     let distrito = inputDistrito.value;
 
@@ -34,7 +34,7 @@ const imprimir = () => {
     console.log('La edad es:', edad);
     console.log('El teléfono es:', telefono);
     console.log('El domicilio es:', domicilio);
-    console.log('La provincia es:', provincia);
+    console.log('La provincia es:', provincias);
     console.log('El cantón es:', canton);
     console.log('El distrito es:', distrito);
 };
@@ -91,7 +91,7 @@ const validar = () => {
 
     }
 
-    if (listaProvincia.value == '') {
+    if (listaProvincias.value == '') {
         hayError = true;
     } else {
 
