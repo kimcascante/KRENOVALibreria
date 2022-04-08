@@ -1,8 +1,5 @@
 * {
     box-sizing: border-box;
-}
-
-body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -74,7 +71,7 @@ a {
 
 #sct-footer {
     border: 3px solid #000;
-    background-color: #a20cd4;
+    background-color: #d40ca2;
 }
 
 #sct-footer .dv-contacto {

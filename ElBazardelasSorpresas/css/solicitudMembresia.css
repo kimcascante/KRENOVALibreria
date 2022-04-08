@@ -49,7 +49,30 @@ nav div {
     margin: 15px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+#sct-formulario form {
+    width: 50%;
+    padding: 40px;
+}
+
+#sct-formulario form h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#sct-formulario form .input-container {
+    margin-bottom: 25px;
+}
+
 #sct-footer {
+    display: flex;
     border: 3px solid #000;
 }
 
