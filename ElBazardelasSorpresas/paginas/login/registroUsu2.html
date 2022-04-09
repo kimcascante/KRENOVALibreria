@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario continuación</title>
+    <link rel="stylesheet" href="css/regdos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro Usuario continuación</h1>
+    </header>
+    <section id="cont-principal">
+        <form id="cajas">
+            <div>
+                <form name="subida-imagenes" type="POST" enctype="multipart/formdata">
+                    <input type="file" name="imagen" /> (Elegir foto perfil)
+                </form>
+
+            </div>
+            <div>
+                <label for="dirección">Dirección exacta</label>
+                <input type="dirección" name="Dirección" placeholder="Dirección" required>
+            </div>
+            <div>
+                <select id="slt-provincias">
+                    <option value="">-- Seleccione una provincia --</option>
+                    </select>
+
+            </div>
+            <div>
+                <select id="slt-cantones">
+                <option value="">-- Seleccione un cantón --</option>
+            </select>
+            </div>
+            <div>
+                <select id="slt-distritos">
+                    <option value="">-- Seleccione un distrito --</option>
+                </select>
+            </div>
+            <div>
+                <label for="Contraseña">Contraseña</label>
+                <input type="Contraseña" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
+            </div>
+
+
+            <div>
+                <label for="confirmación contraseña">Confirmación contraseña</label>
+                <input type="confirmación contraseño" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
+            </div>
+            <div>
+                <label for="tipoIdentificacion">Tipo de identificación</label>
+                <select name="tipoIdentificacion" id="tipoIdentificacion">
+                    <option value="1">cédula física</option>
+                    <option value="2">cédula jurídica</option>
+                    <option value="3">extranjero</option>
+                </select>
+            </div>
+
+        </form>
+
+
+
+
+
+    </section>
+
+    <script src="js/distribucion-cr.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="css/registroUsu.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro Usuario</h1>
+    </header>
+    <section id="sct-principal">
+        <form id="validacionCajas">
+            <div class="cajitas">
+                <label for="nombreUsuario">Nombre</label>
+                <input type="nombreUsuario" name="nombreUsuario" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="correo">Correo</label>
+                <input type="correo" name="Email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="segundoNombre">Segundo Nombre</label>
+                <input type="segundoNombre" name="SegundoNombre" placeholder="Segundo Nombre" required>
+            </div>
+            <div>
+                <label for="contrasenna">Contraseña</label>
+                <input type="contrasenna" name="contrasenna" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <label for="primerApellido">Primer Apellido</label>
+                <input type="primerApellido" name="Primer Apellido" placeholder="Primer Apellido" required>
+            </div>
+            <div>
+                <label for="confirmacionContra">Confirmación contraseña</label>
+                <input type="confirmacionContra" name="Confirmación contraseña" placeholder="Confirmación Contraseña" required>
+            </div>
+            <div>
+                <label for="segundoApellido">Segundo Apellido</label>
+                <input type="segundoApellido" name="Segundo Apellido" placeholder="Segundo Apellido" required>
+            </div>
+            <div>
+                <label for="tipoIdentificacion">Tipo de identificación</label>
+                <select name="tipoIdentificacion" id="tipoIdentificacion">
+                    <option value="1">cédula física</option>
+                    <option value="2">cédula jurídica</option>
+                    <option value="3">extranjero</option>
+                </select>
+            </div>
+            <div>
+                <label for="datoTelefono">Teléfono</label>
+                <input type="datoTelefono" name="Teléfono" placeholder="Teléfono" required>
+            </div>
+            <button type="submit">Continuar con Registro</button>
+
+
+
+        </form>
+    </section>
+
+
+</body>
+
+</html>

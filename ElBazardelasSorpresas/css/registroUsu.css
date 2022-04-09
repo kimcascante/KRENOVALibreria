@@ -1,0 +1,16 @@
+#sct-principal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#validacionCajas {
+    margin-top: 25px;
+    columns: 2;
+}
+
+#sct-principal {
+    height: 500px;
+    width: 500px;
+}
