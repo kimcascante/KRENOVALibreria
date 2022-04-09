@@ -1,16 +1,52 @@
-const form = document.getElementById('loginForm');
+//Constantes para extraer datos del formulario HTML
+const botonRegistrar = document.getElementById('btn-ingresar');
+const inputCorreo = document.getElementById('txt-correo');
+const inputContrasenna = document.getElementById('txt-contrasenna');
 
-function onSubmit(event){
-    console.log(event)
-    event.preventDefault();
-    //VAlidaciones
-    const passField = document.getElementById("pass");
+const imprimir = () => {
+    let correo = inputCorreo.value;
+    let contrasenna = inputContrasenna.value;
 
-    if (passField.value == ""){
-        alert("agregue contra")
+    console.log('El correo es:', correo);
+    console.log('La contraseña es:', contrasenna);
+
+};
+
+
+// Crear función de validación "validar"
+const validar = () => {
+    let hayError = false;
+
+    if (inputCorreo.value == '') {
+        hayError = true;
+    } else {
+
     }
-    
+
+    if (inputContrasenna.value == '') {
+        hayError = true;
+    }
+
+    //Validación final
+    if (hayError) {
+        Swal.fire({
+            'icon': 'warning',
+            'title': 'Inicio de sesión fallido',
+            'text': 'Usuario o contraseña inválidos'
+        });
+    } else {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'Inicio de sesión exitoso',
+            'text': 'Bienvenido al Bazar de las Sorpresas!'
+        }).then(() => {
+            //Redirecciona al landing page del Bazar
+            window.location.href = '../landingPageBazar.html'
+        });
+
+    };
 }
 
-// form.addEventListener('submit',onSubmit)
-// form.addEventListener('click',onSubmit)
+//imprimir();
+
+botonRegistrar.addEventListener('click', validar);
