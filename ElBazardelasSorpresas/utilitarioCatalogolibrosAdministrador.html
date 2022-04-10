@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+
+    <title>Cátalogo libros</title>
+</head>
+
+<body>
+
+    <section id="sct-top">
+        <div class="dv-bazar">
+            <h2>El bazar de las sorpresas</h2>
+        </div>
+
+        <div class="div-titulo">
+            <h2 class="titulo-panel">Registro libro</h2>
+        </div>
+
+        <div class="dv-opciones">
+            <div id="dv-homePage">
+                <a href="homePageAdmin.html">
+                    <h4> <img src="img/icons/25694.png" alt="" height="20" width="20">Menú administrador</h4>
+                </a>
+            </div>
+
+            <div id="dv-cerrarSesion">
+                <a href="landingPageBazar.html">
+                    <h4> <img src="img/icons/cerrar sesion.png" alt="" height="20" width="20"> Cerrar sesión</h4>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sct-registro">
+        <form>
+            <div class="input-container">
+                <label for="txt-isbn">ISBN</label>
+
+                <input type="text" id="txt-isbn">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombrelibro">Nombre del libro</label>
+                <input type="text" id="txt-nombrelibro" autocomplete="off">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-autor">Autor/Autores</label>
+                <input type="text" id="txt-autor">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-fechapubli">Fecha Publicación</label>
+                <input type="date" id="txt-fechapubli">
+            </div>
+            <div class="input-container">
+                <label for="slt-genero">Género literario</label>
+
+                <select id="slt-genero">
+                    <option value="">-- Seleccione una opción --</option>   
+                    <option value="1">narrativo</option>
+                    <option value="2">lírico</option>
+                    <option value="3">dramático</option>
+                    <option value="4">didáctico</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="txt-editorial">Editorial</label>
+                <input type="text" id="txt-editorial">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-premios">Premios Ganados</label>
+                <input type="text" id="txt-premios">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-resenna">Reseña literaria</label>
+                <input type="text" id="txt-resenna">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-psubtotal">Precio Subtotal</label>
+                <input type="number" id="txt-psubtotal">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-utilidad">Utilidad</label>
+                <input type="number" id="txt-utilidad">
+            </div>
+            <div class="input-container">
+                <label for="slt-impuesto">Tipo de impuesto</label>
+
+                <select id="slt-impuesto">
+                    <option value="">-- Seleccione una opción --</option>   
+                    <option value="1">Exento 0%</option>
+                    <option value="2">IVA 13%</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <label for="txt-descuento">Descuento</label>
+                <input type="number" id="txt-descuento">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-pfinal">Precio final</label>
+                <input type="number" id="txt-pfinal">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-invinicial">Inventario inicial</label>
+                <input type="number" id="txt-invinicial">
+            </div>
+
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Registrar</button>
+            </div>
+            <div class="btn-control">
+                <button type="button" id="btn-modificar" class="btn-oscuro">Modificar</button>
+            </div>
+            <div class="btn-control">
+                <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='catalogolibrosAdministrador.html' ">Cancelar</button>
+            </div>
+
+        </form>
+
+        <div class="img-contenedor">
+
+        </div>
+
+
+    </section>
+    <section id="sct-listar">
+        <table id="tbl-listarLibros">
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Nombre del libro</th>
+                    <th>Autor/Autores</th>
+                    <th>Inventario actual</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de registros: 3 </td>
+                </tr>
+
+            </tfoot>
+        </table>
+        <a href="catalogoLibrosAdministrador.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <strong>Regresar al listado libros</strong><br>
+            </p>
+        </a>
+    </section>
+
+    <section id="sct-footer">
+        <footer>
+            <div class="dv-contacto">
+                <label for="">Servicio al cliente</label>
+                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
+            </div>
+
+            <div class="dv-derechos">
+                <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
+    <script src="js/utilitarioCatalogolibrosAdministrador.js"></script>
+
+    <script src="js/libros.js "></script>
+
+    <script src="js/listarCatalogolibros.js "></script>
+
+
+</body>
+
+</html>
