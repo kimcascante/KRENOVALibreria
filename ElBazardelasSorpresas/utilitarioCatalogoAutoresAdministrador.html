@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/utilitario catalogolibros-administrador.css">
+    <link rel="stylesheet" href="css/catalogolibros-administrador.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="sct-registro">
+        <form>
+            <div class="etiqueta-titulo">
+                <h1>Item del autor</h1>
+            </div>
+
+            <div class="input-container">
+                <label for="txt-idautor">Id_Autor</label>
+
+                <input type="text" id="txt-idautor">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombreautor">Nombre del autor</label>
+                <input type="text" id="txt-nombreautor" autocomplete="off">
+            </div>
+            <div class="input-container">
+                <label for="slt-paises">País de Nacimiento</label>
+                <select id="slt-paises">
+                    <option value="">-- Seleccione una opción --</option>   
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="txt-fechanaci">Fecha Nacimiento</label>
+                <input type="date" id="txt-fechanaci">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-fechadefu">Fecha Defunción</label>
+                <input type="date" id="txt-fechadefu">
+            </div>
+            <div class="input-container">
+                <label for="slt-genero">Género persona</label>
+
+                <select id="slt-genero">
+                    <option value="">-- Seleccione una opción --</option>   
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                </select>
+            </div>
+
+
+            <div class="input-container">
+                <label for="txt-libropubli">Lista de libros publicados</label>
+                <input type="text" id="txt-libropubli">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-premios">Premios Ganados</label>
+                <input type="text" id="txt-premios">
+            </div>
+            <div class="input-container">
+                <p>Ganador de premio nobel</p>
+                <p>
+                    <input type="radio" name="radioNobelPaz" value="si" id="siGanaPremio">Sí
+                    <input type="radio" name="radioNobelPaz" value="no" id="noGanaPremio" checked>No
+                </p>
+                <p>
+                    <input type="date" name="premio" id="fechaPremio" disabled="false">
+                </p>
+
+            </div>
+
+            <div class="input-container">
+                <label for="txt-resennautor">Reseña vida del autor</label>
+                <input type="text" id="txt-resennautor">
+            </div>
+            <div class="input-container">
+                <label for="txt-libroescrito">Libros escritos</label>
+                <input type="text" id="txt-libroescrito">
+            </div>
+
+            </div>
+
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
+            </div>
+
+            <div class="btn-control">
+                <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='catalogolibros-administrador.html' ">Cancelar</button>
+            </div>
+
+        </form>
+
+        <div class="img-contenedor">
+
+        </div>
+
+
+    </section>
+    <section id="sct-listar">
+        <table id="tbl-listarAutor">
+            <thead>
+                <tr>
+                    <th>Id_autor</th>
+                    <th>Nombre autor</th>
+                    <th>País Nacimiento</th>
+                    <th>Fecha Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 3 ITEMS</td>
+                </tr>
+
+            </tfoot>
+        </table>
+        <a href="catalogolibros-administrador.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <strong>Regresar al listado libros</strong><br>
+            </p>
+        </a>
+    </section>
+
+    <script src="js/paises.js "></script>
+    <script src="js/completarPaises.js "></script>
+    <script src="js/autores.js "></script>
+    <script src="js/listar-catalogoautores.js "></script>
+    <script src="js/utilitarioCatalogoAutoresAdministrador.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
+
+
+
+
+
+</body>
+
+</html>
