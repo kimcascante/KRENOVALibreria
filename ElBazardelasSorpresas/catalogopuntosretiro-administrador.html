@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width" , initial-scale=1.0 ">
+    <link rel="stylesheet " href="css/reset.css ">
+    <link rel="stylesheet " href="css/catalogolibros-administrador.css ">
+    <title>Document</title>
+</head>
+<body>
+    <section id="sct-buscasocio "> 
+        <div class="titulo-listadosocio ">
+            <h1>LISTADO DEL CATALOGO DE PUNTOS RETIRO</h1>
+        </div>
+    <form>
+        <div class="panel-buscasocio ">
+             <div class="titulo-buscasocio ">
+             <h1>Buscar en Catálogo de Puntos Retiro</h1>
+            </div> 
+         
+            <div class="input-buscasocio ">
+                <label for="txtidPunto ">Id_punto</label>
+                <input type="text "id="txtidPunto ">
+            </div>
+
+            <div class="input-buscapunto ">
+                <label for="txtnombrePunto ">Nombre punto</label>
+                <input type="text "id="txtnombrePunto ">
+            </div>
+                    
+            <div class="input-buscasocio ">
+                <button type="button " id="btn-buscarsocio " class="btn-oscuro ">Buscar</button>
+            </div>
+        </div> 
+    </form>
+    </section>
+        <hr>
+   <section id="sct-listarPunto ">
+        <h1>Items del inventario</h1>
+
+        <table id='tbl-listarPunto'>
+                <thead>
+                  <tr>
+                    <th>Id_punto</th>
+                    <th>Nombre punto</th>
+                    <th>Id_socio</th>
+                    <th>Nombre socio</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                 </tr>
+
+                </thead>
+            
+               <tbody>
+ 
+               </tbody>
+              <tfoot>
+                  <tr>
+                      <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                  </tr>
+                  
+              </tfoot>
+           
+        </table>
+
+
+    </section>
+    <section id="sct-control ">
+        <form>
+          <div class="btn-control ">
+            <a href="utilitarioCatalogoPuntosRetiroAdmnistrador.html " class=btn-listalibros>
+                <!--<i class="fa-solid fa-tags "></i>-->
+                <p>
+                    <strong>Nuevo</strong><br>
+
+                </p>
+            </a>
+          </div>
+          <div class="btn-control ">
+            <a href="utilitarioCatalogoPuntosRetiroAdmnistrador.html " class=btn-listalibros>
+                 <p>
+                    <strong>Modificar</strong><br>
+
+                </p>
+            </a>
+          </div>
+          <div class="btn-control ">
+            <a href="utilitarioCatalogoPuntosRetiroAdmnistrador.html " class=btn-listalibros>
+                <p>
+                    <strong>Eliminar</strong><br>
+
+                </p>
+            </a>
+         </div>
+     
+
+       <!-- <div class="btn-control ">
+            <button type="button " id="btn-nuevolibro " class="btn-oscuro " onclick="href='panel-administrador.html' ">Nuevo</button>
+           
+        </div>
+        
+         <div class="btn-control ">
+            <button type="button " id="btn-modificarlibro " class="btn-oscuro " onclick="window.location.href='panel-administrador.html' ">Modificar</button>
+         </div>
+
+         <div class="btn-control ">
+            <button type="button " id="btn-eliminarlibro " class="btn-oscuro ">Eliminar</button>
+         </div>-->
+
+        </form>
+    </section>
+        
+
+
+    <a href="panel-administrador.html ">
+    <i class="fa-solid fa-tags "></i>
+        <p>
+        <strong>Regresar al Menu</strong><br>
+        </p>
+    </a>
+    <script src="js/puntosretiro.js "></script>
+    <script src="js/listar-puntosretiro.js "></script>
+    <script src="js/utilitarioCatalogoPuntosRetiroAdministrador "></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
+</body>
+</html>
