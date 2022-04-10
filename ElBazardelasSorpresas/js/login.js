@@ -47,7 +47,7 @@ const validar = () => {
             window.location.href = 'landingPageBazarRegistrado.html'
 
         } else if (inputCorreo.value == 'pcastillo@gmail.com' && inputContrasenna.value == 'paola123') {
-            window.location.href = 'landingPageBazarAdministrador.html'
+            window.location.href = 'homePageAdmin.html'
 
         } else {
             Swal.fire({

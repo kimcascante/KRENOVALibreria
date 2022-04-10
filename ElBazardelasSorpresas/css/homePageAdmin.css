@@ -1,0 +1,96 @@
+/*ESTILOS PANEL DE CONTROL*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/**********************************************************/
+
+#sct-top {
+    height: 70px;
+}
+
+.div-titulo {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+body {
+    background-size: contain;
+}
+
+
+/***********************************************************/
+
+.div-menu-top {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+}
+
+.div-menu-top a {
+    color: black;
+    width: calc(100%/3);
+    padding: 30px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+/***************************************************/
+
+.div-menu-medio {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+}
+
+.div-menu-medio a {
+    color: black;
+    width: calc(100%/3);
+    padding: 30px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+/***************************************************/
+
+.div-menu-down {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 180px;
+}
+
+.div-menu-down a {
+    color: black;
+    width: calc(100%/3);
+    padding: 30px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+/**************************************************/
+
+.btn-panel {
+    background: transarent;
+    color: #d40c3e;
+    height: 130px;
+    width: 150px;
+    font-weight: bold;
+}
+
+.btn-panel:hover {
+    color: #000;
+    background: #d4a20c;
+    cursor: pointer;
+}
+
+
+/*************************************************/

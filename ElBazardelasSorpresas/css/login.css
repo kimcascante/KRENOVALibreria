@@ -50,3 +50,8 @@ body {
 .titulo {
     align-self: initial;
 }
+
+#btn-ingresar {
+    margin-top: 10px;
+    cursor: pointer;
+}
