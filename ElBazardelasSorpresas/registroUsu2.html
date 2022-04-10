@@ -13,54 +13,62 @@
     <header>
         <h1>Registro Usuario continuación</h1>
     </header>
-    <section id="cont-principal">
+    <section id="pantalla-dividida">
         <form id="cajas">
-            <div>
-                <form name="subida-imagenes" type="POST" enctype="multipart/formdata">
-                    <input type="file" name="imagen" /> (Elegir foto perfil)
-                </form>
+            <div class="izquierda">
+                <div id="cajitas">
+                    <form name="subida-imagenes" type="POST" enctype="multipart/formdata">
+                        <input type="file" name="imagen" /> (Elegir foto perfil)
+                    </form>
 
-            </div>
-            <div>
-                <label for="dirección">Dirección exacta</label>
-                <input type="dirección" name="Dirección" placeholder="Dirección" required>
-            </div>
-            <div>
-                <select id="slt-provincias">
+                </div>
+                <div id="cajitas">
+                    <label for="dirección">Dirección exacta</label>
+                    <input type="dirección" name="Dirección" placeholder="Dirección" required>
+                </div>
+                <div id="cajitas">
+                    <select id="slt-provincias">
                     <option value="">-- Seleccione una provincia --</option>
                     </select>
 
-            </div>
-            <div>
-                <select id="slt-cantones">
+                </div>
+                <div id="cajitas">
+                    <select id="slt-cantones">
                 <option value="">-- Seleccione un cantón --</option>
             </select>
-            </div>
-            <div>
-                <select id="slt-distritos">
+                </div>
+                <div id="cajitas">
+                    <select id="slt-distritos">
                     <option value="">-- Seleccione un distrito --</option>
                 </select>
-            </div>
-            <div>
-                <label for="Contraseña">Contraseña</label>
-                <input type="Contraseña" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
-            </div>
+                </div>
+                <div id="cajitas">
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="Contraseña" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
+                </div>
 
 
-            <div>
-                <label for="confirmación contraseña">Confirmación contraseña</label>
-                <input type="confirmación contraseño" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
-            </div>
-            <div>
-                <label for="tipoIdentificacion">Tipo de identificación</label>
-                <select name="tipoIdentificacion" id="tipoIdentificacion">
+                <div id="cajitas">
+                    <label for="confirmación contraseña">Confirmación contraseña</label>
+                    <input type="confirmación contraseño" name="Confirmación contraseña" placeholder="Confirmación Contraseña">
+                </div>
+                <div id="cajitas">
+                    <label for="tipoIdentificacion">Tipo de identificación</label>
+                    <select name="tipoIdentificacion" id="tipoIdentificacion">
                     <option value="1">cédula física</option>
                     <option value="2">cédula jurídica</option>
                     <option value="3">extranjero</option>
                 </select>
-            </div>
+                </div>
+
+                <button>Registrar</button>
 
         </form>
+        </div>
+        <div class="derecha">
+            <img src="./img/fondo.jpg" alt="">
+
+        </div>
 
 
 

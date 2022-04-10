@@ -9,59 +9,73 @@
     <link rel="stylesheet" href="css/registroUsu.css">
 </head>
 
+
 <body>
     <header>
         <h1>Registro Usuario</h1>
     </header>
-    <section id="sct-principal">
-        <form id="validacionCajas">
-            <div class="cajitas">
-                <label for="nombreUsuario">Nombre</label>
-                <input type="nombreUsuario" name="nombreUsuario" placeholder="Nombre" required>
+    <main>
+        <section>
+            <form id="registerUserForm">
+                <div class="fieldset">
+                    <label for="primerNombre">
+                        Primer Nombre
+                    </label>
+                    <input type="text" name="firstName" placeholder="Primer Nombre" />
+                </div>
+                <div class="fieldset">
+                    <label for="segundoNombre">
+                            Segundo Nombre
+                        </label>
+                    <input type="text" name="segundoNombre" placeholder="Segundo Nombre" />
+                </div>
+                <div class="fieldset">
+                    <label for="segundoNombre">
+                            Primer Apellido
+                        </label>
+                    <input type="text" name="Primer Apellido" placeholder="Primer Apellido" />
+                </div>
+                <div class="fieldset">
+                    <label for="numTelefono">
+                            Número de Teléfono
+                        </label>
+                    <input type="text" name="Número de teléfono" placeholder="Número de teléfono" />
+                </div>
+
+            </form>
+        </section>
+        <section>
+            <div class="fieldset">
+                <label for="correo">
+                        Correo Electrónico
+                    </label>
+                <input type="email" name="correo" placeholder="Correo" />
             </div>
-            <div>
-                <label for="correo">Correo</label>
-                <input type="correo" name="Email" placeholder="Email" required>
+            <div class="fieldset">
+                <label for="pass">
+                        Contraseña
+                    </label>
+                <input type="password" name="Contraseña" placeholder="Contraseña" />
             </div>
-            <div>
-                <label for="segundoNombre">Segundo Nombre</label>
-                <input type="segundoNombre" name="SegundoNombre" placeholder="Segundo Nombre" required>
+            <div class="fieldset">
+                <label for="confirmPass">
+                        Confirmación Contraseña
+                    </label>
+                <input type="confirmPass" name="Confirmación Contraseña" placeholder="Confirmación Contraseña" />
             </div>
-            <div>
-                <label for="contrasenna">Contraseña</label>
-                <input type="contrasenna" name="contrasenna" placeholder="Contraseña" required>
-            </div>
-            <div>
-                <label for="primerApellido">Primer Apellido</label>
-                <input type="primerApellido" name="Primer Apellido" placeholder="Primer Apellido" required>
-            </div>
-            <div>
-                <label for="confirmacionContra">Confirmación contraseña</label>
-                <input type="confirmacionContra" name="Confirmación contraseña" placeholder="Confirmación Contraseña" required>
-            </div>
-            <div>
-                <label for="segundoApellido">Segundo Apellido</label>
-                <input type="segundoApellido" name="Segundo Apellido" placeholder="Segundo Apellido" required>
-            </div>
-            <div>
+            <div class="fieldset">
                 <label for="tipoIdentificacion">Tipo de identificación</label>
-                <select name="tipoIdentificacion" id="tipoIdentificacion">
+                <select name="" id="">
                     <option value="1">cédula física</option>
                     <option value="2">cédula jurídica</option>
                     <option value="3">extranjero</option>
                 </select>
-            </div>
-            <div>
-                <label for="datoTelefono">Teléfono</label>
-                <input type="datoTelefono" name="Teléfono" placeholder="Teléfono" required>
-            </div>
-            <button type="submit">Continuar con Registro</button>
+                <div class="fieldset">
+                    <a href="registroUsu2.html">Continuar registro</a>
+                </div>
+        </section>
 
-
-
-        </form>
-    </section>
-
+    </main>
 
 </body>
 

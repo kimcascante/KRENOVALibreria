@@ -24,7 +24,3 @@ body {
 #pantalla-dividida {
     display: flex;
 }
-
-#cajitas {
-    margin-bottom: 40px;
-}
