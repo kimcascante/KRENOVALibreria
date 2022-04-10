@@ -1,4 +1,4 @@
-const cuerpoTabla = document.querySelector('#tbl-listarPunto tbody');
+const cuerpoTabla = document.querySelector('#tbl-listar10masvendidos tbody');
 
 
 
@@ -7,17 +7,12 @@ const mostrarDatos = () => {
     cuerpoTabla.innerHTML = '';
 
 
-    listaPuntos.forEach(punto => {
+    lista10Libros.forEach(libro => {
         let fila = cuerpoTabla.insertRow();
 
-        fila.insertCell().textContent = punto.idpunto;
-        fila.insertCell().textContent = punto.nombrePunto;
-        fila.insertCell().textContent = punto.idsocio;
-        fila.insertCell().textContent = punto.nombreSocio;
-        fila.insertCell().textContent = punto.telefono;
-        fila.insertCell().textContent = punto.direccion;
-
-
+        fila.insertCell().textContent = libro.isbn;
+        fila.insertCell().textContent = libro.nombreLibro;
+        fila.insertCell().textContent = libro.autor;
 
     });
 
