@@ -5,7 +5,7 @@
 }
 
 #sct-head {
-    border: 6px solid white;
+    border: 6px solid black;
     display: flex;
 }
 
@@ -20,7 +20,7 @@
     background: transparent;
     padding: 20px 100px;
     font-size: 40px;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@
 }
 
 .btn-cerrar p {
-    color: white;
+    color: black;
 }
 
 .btn-cerrar :hover {
@@ -53,10 +53,11 @@
 
 /**********************************************************/
 
-body {
+
+/*body {
     background-image: url('../img/fondo-administrador-libro_n4.png');
     background-size: contain;
-}
+}*/
 
 
 /***********************************************************/
@@ -69,7 +70,7 @@ body {
 }
 
 .div-menu-top a {
-    color: white;
+    color: black;
     width: calc(100%/3);
     padding: 30px;
     font-size: 20pt;
@@ -87,7 +88,7 @@ body {
 }
 
 .div-menu-medio a {
-    color: white;
+    color: black;
     width: calc(100%/3);
     padding: 30px;
     font-size: 20pt;
@@ -105,7 +106,7 @@ body {
 }
 
 .div-menu-down a {
-    color: white;
+    color: black;
     width: calc(100%/3);
     padding: 30px;
     font-size: 20pt;
@@ -116,10 +117,10 @@ body {
 /**************************************************/
 
 #sct-footer {
-    border: 6px solid white;
+    border: 6px solid black;
     background: transparent;
     font-size: 18pt;
-    color: white;
+    color: black;
 }
 
 #sct-footer .dv-contacto {

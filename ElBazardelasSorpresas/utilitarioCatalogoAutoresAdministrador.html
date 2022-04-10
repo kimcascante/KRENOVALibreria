@@ -16,13 +16,19 @@
     <section id="sct-registro">
         <form>
             <div class="etiqueta-titulo">
-                <h1>Item del autor</h1>
+                <h1>Perfil del autor</h1>
             </div>
 
             <div class="input-container">
                 <label for="txt-idautor">Id_Autor</label>
 
                 <input type="text" id="txt-idautor">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-imagenAutor">Foto autor</label>
+
+                <input type="file" id="txt-imagenAutor">
             </div>
 
             <div class="input-container">
@@ -56,13 +62,13 @@
 
 
             <div class="input-container">
-                <label for="txt-libropubli">Lista de libros publicados</label>
-                <input type="text" id="txt-libropubli">
+                <p>Lista de libros publicados:</p>
+                <p></p><textarea name="comentario" id="ctx-libropubli">Adjuntar titulo libro</textarea></p>
             </div>
 
             <div class="input-container">
-                <label for="txt-premios">Premios Ganados</label>
-                <input type="text" id="txt-premios">
+                <p>Lista de premios ganados:</p>
+                <p></p><textarea name="comentario" id="ctx-premiosganados">Adjuntar datos del premio</textarea></p>
             </div>
             <div class="input-container">
                 <p>Ganador de premio nobel</p>
@@ -77,12 +83,12 @@
             </div>
 
             <div class="input-container">
-                <label for="txt-resennautor">Reseña vida del autor</label>
-                <input type="text" id="txt-resennautor">
+                <p>Reseña vida del autor:</p>
+                <p></p><textarea name="comentario" id="ctx-resennautor">Adjuntar datos del autor</textarea></p>
             </div>
             <div class="input-container">
-                <label for="txt-libroescrito">Libros escritos</label>
-                <input type="text" id="txt-libroescrito">
+                <p>Libros escritos:</p>
+                <p></p><textarea name="comentario" id="ctx-libroescrito">Adjuntar libros escritos</textarea></p>
             </div>
 
             </div>
@@ -92,7 +98,7 @@
             </div>
 
             <div class="btn-control">
-                <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='catalogolibros-administrador.html' ">Cancelar</button>
+                <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='catalogoautores-administrador.html' ">Cancelar</button>
             </div>
 
         </form>
