@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="ccs/catalogolibrosAdministrador">
     <title>Géneros literarios</title>
 </head>
 
@@ -35,25 +36,95 @@
         </div>
 
     </section>
+    <section id="sct-buscagenero ">
+        <div class="titulo-listadogenero ">
+            <h1>LISTADO DE GÉNEROS LITERARIOS</h1>
+        </div>
+        <form>
+            <div class="panel-buscagenero ">
+                <div class="titulo-buscagenero ">
+                    <h1>Buscar en Listado de Géneros Literarios</h1>
+                </div>
 
-    <section>
+                <div class="input-buscagenero ">
+                    <label for="txtidGenero ">Id_género</label>
+                    <input type="text " id="txtidGenero ">
+                </div>
 
-        <h2>En proceso de construcción</h2>
+                <div class="input-buscagenero ">
+                    <label for="txtnombreGenero ">Nombre género</label>
+                    <input type="text " id="txtnombreGenero ">
+                </div>
+
+                <div class="input-buscagenero ">
+                    <button type="button " id="btn-buscargenero " class="btn-oscuro ">Buscar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section id="sct-listarGenero ">
+        <h1>Items del inventario</h1>
+
+        <table id='tbl-listarGenero'>
+            <thead>
+                <tr>
+                    <th>Id_género</th>
+                    <th>Nombre género/th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 6 ITEMS</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
 
 
-        <a href="homePageAdmin.html ">
-            <i class="fa-solid fa-tags "></i>
-            <p>
-                <strong>Regresar al Menu</strong><br>
-            </p>
-        </a>
+    </section>
+    <section id="sct-control ">
+        <form>
+            <div class="btn-control ">
+                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
+                    <!--<i class="fa-solid fa-tags "></i>-->
+                    <p>
+                        <strong>Nuevo</strong><br>
 
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
+                    <p>
+                        <strong>Modificar</strong><br>
+
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
+                    <p>
+                        <strong>Eliminar</strong><br>
+
+                    </p>
+                </a>
+            </div>
+
+
+        </form>
     </section>
 
 
 
 
-    <!-- <section id="sct-footer">
+    <section id="sct-footer">
         <footer>
             <div class="dv-contacto">
                 <label for="">Servicio al cliente</label>
@@ -66,8 +137,11 @@
                 <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
             </div>
         </footer>
-    </section> -->
+    </section>
 
+    <script src="js/generos.js "></script>
+    <script src="js/listarGeneros.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 
 </body>
 

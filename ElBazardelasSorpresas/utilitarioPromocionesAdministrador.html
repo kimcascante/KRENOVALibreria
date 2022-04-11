@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.cssx">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/utilitarioCatalogoAutoresAdministrador.css">
+
+    <title>Cátalogo autores</title>
+</head>
+
+<body>
+
+    <section id="sct-top">
+        <div class="dv-bazar">
+            <h2>El bazar de las sorpresas</h2>
+        </div>
+
+        <div class="div-titulo">
+            <h2 class="titulo-panel">Registro libro</h2>
+        </div>
+
+        <div class="dv-opciones">
+            <div id="dv-homePage">
+                <a href="homePageAdmin.html">
+                    <h4> <img src="img/icons/25694.png" alt="" height="20" width="20">Menú administrador</h4>
+                </a>
+            </div>
+
+            <div id="dv-cerrarSesion">
+                <a href="landingPageBazar.html">
+                    <h4> <img src="img/icons/cerrar sesion.png" alt="" height="20" width="20"> Cerrar sesión</h4>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sct-registro">
+        <form>
+            <div class="etiqueta-titulo">
+                <h1>Registro de promociones</h1>
+            </div>
+
+            <div class="input-container">
+                <label for="txt-idPromocion">Id_promocion</label>
+
+                <input type="text" id="txt-idPromocion">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombrePromocion">Nombre promocion</label>
+                <input type="text" id="txt-nombrePromocion">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-fechainicia">Fecha Inicia</label>
+                <input type="date" id="txt-fechainicia">
+            </div>
+            <div class="input-container">
+                <label for="txt-fechafinal">Fecha Finaliza</label>
+                <input type="date" id="txt-fechafinal">
+            </div>
+            <div class="input-container">
+                <p>Tipo promoción</p>
+                <p>
+                    <input type="radio" name="radioTipoPromocion" value="1" id="porArticulo">por Artículo
+                    <input type="radio" name="radioTipoPromocion" value="2" id="porGenero">por Genero
+                    <input type="radio" name="radioTipoPromocion" value="3" id="porAutor">por Autor
+                    <input type="radio" name="radioTipoPromocion" value="4" id="General" checked>General
+                </p>
+                <p>
+                    <label for="txt-idCodigo">Codigo item</label>
+                    <input type="number" name="numCodigo" id="idCodigo" disabled="false">
+                    <label for="txt-nombreItem">Nombre item</label>
+                    <input type="text" name="nomItem" id="nombreItem" disabled="false">
+                </p>
+                <label for="txt-descuento">Descuento</label>
+                <input type="number" id="txt-descuento">
+            </div>
+
+
+
+
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
+            </div>
+
+            <div class="btn-control">
+                <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
+            </div>
+
+        </form>
+
+        <div class="img-contenedor">
+
+        </div>
+
+
+    </section>
+    <section id="sct-listar">
+        <table id="tbl-listarPromociones">
+            <thead>
+                <tr>
+                    <th>Id_promocion</th>
+                    <th>Nombre promocion</th>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Finaliza</th>
+                    <th>Tipo Descuento</th>
+                    <th>Id_item</th>
+                    <th>Nombre item</th>
+                    <th>Porcentaje Descuento</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                </tr>
+
+            </tfoot>
+        </table>
+        <a href="promociones.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <strong>Regresar al listado promociones</strong><br>
+            </p>
+        </a>
+    </section>
+
+    <section id="sct-footer">
+        <footer>
+            <div class="dv-contacto">
+                <label for="">Servicio al cliente</label>
+                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
+            </div>
+
+            <div class="dv-derechos">
+                <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="js/listarPromociones.js "></script>
+    <script src="js/utilitarioPromocionesAdministrador.js "></script>
+
+</body>
+
+</html>

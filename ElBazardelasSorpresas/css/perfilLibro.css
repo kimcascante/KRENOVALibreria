@@ -39,3 +39,10 @@ select {
     text-decoration: underline;
     color: #a20cd4;
 }
+
+.dv-button button {
+    width: 150px;
+    height: 30px;
+    background-color: #d4a20c;
+    border-radius: 15px;
+}

@@ -13,54 +13,51 @@ const validar = () => {
 
     if (inputTarjeta.value == '') {
         hayError = true;
-        inputTarjeta.classList.add('input-error')
+        //inputTarjeta.classList.add('input-error')
     } else {
-        inputTarjeta.classList.remove('input-error');
+        //inputTarjeta.classList.remove('input-error');
     }
 
     if (inputNombre.value == '') {
         hayError = true;
-        inputNombre.classList.add('input-error');
+        //inputNombre.classList.add('input-error');
     } else {
-        inputNombre.classList.remove('input-error');
+        //inputNombre.classList.remove('input-error');
     }
 
     if (inputExpiracion.value == '') {
         hayError = true;
-        inputExpiracion.classList.add('input-error');
+        //inputExpiracion.classList.add('input-error');
     } else {
-        inputExpiracion.classList.remove('input-error');
+        //inputExpiracion.classList.remove('input-error');
     }
 
     if (inputCVV.value == '') {
         hayError = true;
-        inputCVV.classList.add('input-error');
+        //inputCVV.classList.add('input-error');
     } else {
-        inputCVV.classList.remove('input-error');
+        //inputCVV.classList.remove('input-error');
 
     }
 
     if (inputFactura.value == '') {
         hayError = true;
-        inputFactura.classList.add('input-error');
+        //inputFactura.classList.add('input-error');
     } else {
-        inputFactura.classList.remove('input-error');
+        //inputFactura.classList.remove('input-error');
 
     }
     if (inputDestino.value == '') {
         hayError = true;
-        inputDestino.classList.add('input-error');
+        //inputDestino.classList.add('input-error');
     } else {
-        inputDestino.classList.remove('input-error');
+        //inputDestino.classList.remove('input-error');
 
     }
 
     if (inputMetodo.value == '') {
         hayError = true;
-        inputMetodo.classList.add('input-error');
-    } else {
-        inputMetodo.classList.remove('input-error');
-
+        //inputMetodo.classList.add('input-error');
     }
 
 
@@ -71,8 +68,8 @@ const validar = () => {
         Swal.fire({
             icon: 'error',
             title: 'Su compra no pudo ser completada',
-            text: 'revise los campos resaltados',
-        })
+            text: 'Revise los campos faltantes',
+        });
     } else {
         Swal.fire({
             icon: 'success',
