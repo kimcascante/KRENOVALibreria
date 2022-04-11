@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/registroUsu.css">
+</head>
+
+
+<body>
+
+    <section id="sct-top">
+        <div class="dv-bazar">
+            <h2>El bazar de las sorpresas</h2>
+        </div>
+    </section>
+
+    <header>
+        <h1>Registro Usuario</h1>
+    </header>
+    <main>
+        <section>
+            <form id="registerUserForm">
+                <div class="fieldset">
+                    <label for="primerNombre">
+                        Primer Nombre
+                    </label>
+                    <input id="txt-nombre" type="text" name="firstName" placeholder="Primer Nombre" />
+                </div>
+                <div class="fieldset">
+                    <label for="segundoNombre">
+                            Segundo Nombre
+                        </label>
+                    <input id="txt-segundoNombre" type="text" name="segundoNombre" placeholder="Segundo Nombre" />
+                </div>
+                <div class="fieldset">
+                    <label for="segundoNombre">
+                            Primer Apellido
+                        </label>
+                    <input id="txt-apellido" type="text" name="Primer Apellido" placeholder="Primer Apellido" />
+                </div>
+                <div class="fieldset">
+                    <label for="numTelefono">
+                            Número de Teléfono
+                        </label>
+                    <input id="txt-telefono" type="text" name="Número de teléfono" placeholder="Número de teléfono" />
+                </div>
+
+                <div class="fieldset">
+                    <select name="" id="">
+                        <option value="0">-- Seleccione el tipo de identificación --</option>
+                        <option value="1">Cédula física</option>
+                        <option value="2">Cédula jurídica</option>
+                        <option value="3">Extranjero</option>
+                    </select>
+                    <input type="text" name="" id="txt-identificacion">
+                </div>
+
+                <div id="cajitas">
+                    <label for="">
+                            Foto de perfil
+                        </label>
+                    <input id="" type="file" name="imagen" />
+                </div>
+            </form>
+        </section>
+        <section>
+            <form action="" id="registerUserForm">
+                <div class="fieldset">
+                    <label for="correo">
+                            Correo Electrónico
+                        </label>
+                    <input id="txt-correo" type="email" name="correo" placeholder="Correo" />
+                </div>
+                <div class="fieldset">
+                    <label for="pass">
+                            Contraseña
+                        </label>
+                    <input id="txt-contrasenna" type="password" name="Contraseña" placeholder="Contraseña" />
+                </div>
+                <div class="fieldset">
+                    <label for="confirmPass">
+                            Confirmación Contraseña
+                        </label>
+                    <input id="txt-confiContrasenna" type="confirmPass" name="Confirmación Contraseña" placeholder="Confirmación Contraseña" />
+                </div>
+
+
+                <div id="cajitas">
+                    <label for="dirección">Dirección exacta</label>
+                    <input id="txt-direccion" type="dirección" name="Dirección" placeholder="Dirección" required>
+                </div>
+                <div id="cajitas">
+                    <select id="slt-provincias">
+                        <option value="">-- Seleccione una provincia --</option>
+                        </select>
+
+                </div>
+                <div id="cajitas">
+                    <select id="slt-cantones">
+                    <option value="">-- Seleccione un cantón --</option>
+                </select>
+                </div>
+                <div id="cajitas">
+                    <select id="slt-distritos">
+                        <option value="">-- Seleccione un distrito --</option>
+                    </select>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <div class="fieldset">
+        <button id="btn-continuar" type="button">Continuar registro</button>
+    </div>
+
+    <section id="sct-footer">
+        <footer>
+            <div class="dv-contacto">
+                <label for="">Servicio al cliente</label>
+                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
+            </div>
+
+            <div class="dv-derechos">
+                <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
+            </div>
+        </footer>
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/registroUsu.js"></script>
+    <script src="js/distribucion-cr.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>

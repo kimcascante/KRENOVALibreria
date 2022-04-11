@@ -8,13 +8,15 @@ body {
 }
 
 #logo {
-    width: 250px;
+    margin: 10px;
+    width: 500px;
     height: 250px;
+    border-radius: 20px;
 }
 
 #login {
     width: 400px;
-    height: 250px;
+    height: 350px;
     background-color: white;
     margin: 0 auto;
     padding: 50px;
@@ -44,11 +46,14 @@ body {
     border-radius: 3px;
     font-size: 20px;
     color: white;
-    background-color: #a20cd4;
+    background-color: blueviolet;
 }
 
 .titulo {
     align-self: initial;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 5px;
 }
 
 #btn-ingresar {

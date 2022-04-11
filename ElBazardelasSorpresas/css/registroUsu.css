@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 200px;
+}
+
+select {
+    width: auto;
+}
+
+h1 {
+    margin: 30px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+body header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+body main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+body main section {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset {
+    margin-bottom: 60px;
+}
+
+div {
+    align-self: center;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+}
+
+#cajitas {
+    margin: 20px;
+}

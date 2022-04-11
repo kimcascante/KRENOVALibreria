@@ -3,15 +3,16 @@
 
 <head>
     <title>Log in</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/cambioContrasenna.css">
 </head>
 
 <body>
     <header>
-        <img id="logo" src="img/BlogEditorial.jpg" />
+        <img id="logo" src="img/fondopass.jpg" />
     </header>
-    <h1 class="titulo">Inicio de sesión</h1>
+    <h1 class="titulo">Cambio de contraseña</h1>
     <main>
         <section id="login" class="floting-center">
             <form id="loginForm">
@@ -20,11 +21,18 @@
                     <input id="txt-correo" placeholder="Email" />
                 </fieldset>
                 <fieldset>
-                    <label for="password">Contraseña</label>
+                    <label for="password">Antigua contraseña</label>
                     <input id="txt-contrasenna" type="password" name="pass" placeholder="Contrase&ntilde;a" />
                 </fieldset>
-                <a href="cambioContrasenna.html"> ¿Olvidó su contraseña? </a>
-                <button id="btn-ingresar" type="button">Ingresar</button>
+                <fieldset>
+                    <label for="password">Nueva contraseña</label>
+                    <input id="txt-nuevaContrasenna" type="password" name="pass" placeholder="Contrase&ntilde;a" />
+                </fieldset>
+                <fieldset>
+                    <label for="password">Nueva contraseña</label>
+                    <input id="txt-confirmarNuevaContrasenna" type="password" name="pass" placeholder="Contrase&ntilde;a" />
+                </fieldset>
+                <button id="btn-ingresar" type="button">Guardar contraseña</button>
             </form>
         </section>
     </main>
@@ -41,7 +49,7 @@
 
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/login.js"></script>
+    <script src="js/cambioContrasenna.js"></script>
 </body>
 
 </html>
