@@ -4,97 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width" , initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet " href="css/reset.css ">
     <link rel="stylesheet " href="css/catalogolibros-administrador.css ">
     <title>Document</title>
 </head>
+
 <body>
-    <section id="sct-buscarlibros "> 
+    <section id="sct-buscarlibros ">
         <div class="titulo-listadolibros ">
             <h1>LISTADO DEL CATALOGO DE LIBROS</h1>
         </div>
-    <form>
-        <div class="panel-buscalibro ">
-             <div class="titulo-buscalibro ">
-             <h1>Buscar en Catálogo de Libros</h1>
-            </div> 
-         
-            <div class="input-buscalibro ">
-                <label for="txtlibroIsbn ">ISBN</label>
-                <input type="text "id="txtlibroIsbn ">
-            </div>
+        <form>
+            <div class="panel-buscalibro ">
+                <div class="titulo-buscalibro ">
+                    <h1>Buscar en Catálogo de Libros</h1>
+                </div>
 
-            <div class="input-buscalibro ">
-                <label for="txtnombreLibro ">Nombre Libro</label>
-                <input type="text "id="txtnombreLibro ">
+                <div class="input-buscalibro ">
+                    <label for="txtlibroIsbn ">ISBN</label>
+                    <input type="text " id="txtlibroIsbn ">
+                </div>
+
+                <div class="input-buscalibro ">
+                    <label for="txtnombreLibro ">Nombre Libro</label>
+                    <input type="text " id="txtnombreLibro ">
+                </div>
+
+                <div class="input-buscalibro ">
+                    <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
+                </div>
             </div>
-                    
-            <div class="input-buscalibro ">
-                <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
-            </div>
-        </div> 
-    </form>
+        </form>
     </section>
-        <hr>
-   <section id="sct-listarlibros ">
+    <hr>
+    <section id="sct-listarlibros ">
         <h1>Items del inventario</h1>
 
         <table id='tbl-listarLibros'>
-                <thead>
-                  <tr>
+            <thead>
+                <tr>
                     <th>Isbn</th>
                     <th>Nombre Libro</th>
                     <th>Autor/Autores</th>
                     <th>Inventario actual</th>
-                 </tr>
+                </tr>
 
-                </thead>
-            
-               <tbody>
- 
-               </tbody>
-              <tfoot>
-                  <tr>
-                      <td>TOTAL DE REGISTROS: 3 ITEMS</td>
-                  </tr>
-                  
-              </tfoot>
-           
+            </thead>
+
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 3 ITEMS</td>
+                </tr>
+
+            </tfoot>
+
         </table>
 
 
     </section>
     <section id="sct-control ">
         <form>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
-                <!--<i class="fa-solid fa-tags "></i>-->
-                <p>
-                    <strong>Nuevo</strong><br>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
+                    <!--<i class="fa-solid fa-tags "></i>-->
+                    <p>
+                        <strong>Nuevo</strong><br>
 
-                </p>
-            </a>
-          </div>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
-                 <p>
-                    <strong>Modificar</strong><br>
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
+                    <p>
+                        <strong>Modificar</strong><br>
 
-                </p>
-            </a>
-          </div>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
-                <p>
-                    <strong>Eliminar</strong><br>
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogolibrosAdministrador.html " class=btn-listalibros>
+                    <p>
+                        <strong>Eliminar</strong><br>
 
-                </p>
-            </a>
-         </div>
-     
+                    </p>
+                </a>
+            </div>
 
-       <!-- <div class="btn-control ">
+
+            <!-- <div class="btn-control ">
             <button type="button " id="btn-nuevolibro " class="btn-oscuro " onclick="href='panel-administrador.html' ">Nuevo</button>
            
         </div>
@@ -109,18 +110,19 @@
 
         </form>
     </section>
-        
+
 
 
     <a href="panel-administrador.html ">
-    <i class="fa-solid fa-tags "></i>
+        <i class="fa-solid fa-tags "></i>
         <p>
-        <strong>Regresar al Menu</strong><br>
+            <strong>Regresar al Menu</strong><br>
         </p>
     </a>
     <script src="js/libros.js "></script>
     <script src="js/listar-catalogolibros.js "></script>
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 
 </body>
+
 </html>

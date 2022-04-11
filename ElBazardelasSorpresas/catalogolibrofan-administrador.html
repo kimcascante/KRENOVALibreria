@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="sct-tarifadomicilio ">
+        <h1>Configuración de parámetros del club libro fan</h1>
+        <hr>
+        <hr>
+
+        <div class="input-configurarparametros ">
+            <h2>Mínimo de compras para solicitud de membresía</h2>
+            <div class="input-container ">
+
+                <div>
+                    <label for="txtcantidadFan ">Cantidad</label>
+                    <input type='number' name='numero' value='1' min='1' max='50' step='1' id='txtcantidadFan' />
+                </div>
+
+            </div>
+
+            <h2>Porcentaje descuento club libro fan</h2>
+            <div class="input-porcentajedescuento ">
+                <div class="input-container ">
+
+                    <div>
+                        <label for="txtporcentajedescuento ">Porcentaje</label>
+                        <input type='number' name='numero' value='0' min='0' max='100' step='1' id='txtporcentajedescuento' />
+                    </div>
+
+                </div>
+                <div class="btn-control ">
+                    <button type="button " id="btn-registrar " class="btn-oscuro ">Guardar</button>
+                </div>
+            </div>
+            <hr>
+
+    </section>
+    <form>
+        <section id="sct-miembros ">
+            <hr>
+            <div class="input-miembros ">
+                <h1>Listado de miembros club libro fan</h1>
+                <table id='tbl-listarFan'>
+                    <thead>
+                        <tr>
+                            <th>Id_membresía</th>
+                            <th>Id_cliente</th>
+                            <th>Nombre cliente</th>
+                            <th>Fecha ingreso</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+
+                <div class="btn-control ">
+                    <a href="utilitarioMiembrosAdministrador.html " class=btn-listamiembros>
+                        <!--<i class="fa-solid fa-tags "></i>-->
+                        <p>
+                            <strong>Nuevo</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioMiembrosAdministrador.html " class=btn-listamiembros>
+                        <p>
+                            <strong>Modificar</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioMiembrosAdministrador.html " class=btn-listamiembros>
+                        <p>
+                            <strong>Eliminar</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <hr>
+
+
+        </section>
+
+
+    </form>
+    <form>
+        <section id="sct-solicitud ">
+            <hr>
+            <div class="input-solicitud ">
+                <h1>Listado de solicitud club libro fan</h1>
+                <hr>
+                <div class="btn-panelsolicitud ">
+                    <button type="button " id="btn-registrar " class="btn-oscuro ">Aprobar nuevas membresías</button>
+                </div>
+
+                <table id="tbl-solicitudFan">
+                    <thead>
+                        <tr>
+                            <th>Id_cliente</th>
+                            <th>Nombre cliente</th>
+                            <th>Acumulado compras</th>
+                            <th>Estado membresía</th>
+                            <th>Pendiente Compras</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                        </tr>
+
+                    </tfoot>
+
+                </table>
+
+
+                <div class="btn-control ">
+                    <a href="utilitarioSolicitudesAdministrador.html " class=btn-listasolicitud>
+                        <!--<i class="fa-solid fa-tags "></i>-->
+                        <p>
+                            <strong>Nuevo</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioSolicitudesAdministrador.html " class=btn-listasolicitud>
+                        <p>
+                            <strong>Modificar</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioSolicitudesAdministrador.html " class=btn-listasolicitud>
+                        <p>
+                            <strong>Eliminar</strong><br>
+
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <hr>
+
+
+        </section>
+
+    </form>
+
+
+
+    <a href="panel-administrador.html ">
+        <i class="fa-solid fa-tags "></i>
+        <p>
+            <strong>Regresar al Menu</strong><br>
+        </p>
+    </a>
+
+    <script src="js/solicitudfan.js "></script>
+    <script src="js/listar-solicitudfan.js "></script>
+    <script src="js/miembrofan.js "></script>
+    <script src="js/listar-miembrofan.js "></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+</body>
+
+</html>

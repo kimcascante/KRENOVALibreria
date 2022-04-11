@@ -3,12 +3,12 @@ let listaUsuarios = [{
     'correo': 'jmadriz@gmail.com',
     'nombre': 'José Madriz',
     'nacimiento': '1995-03-10',
-    'contrasenna': '123'
+    'contrasenna': 'madriz123'
 }, {
     'tipo': 2,
     'correo': 'pcastillo@gmail.com',
-    'nombre': 'Pedro Castillo',
+    'nombre': 'Paola Castillo',
     'nacimiento': '1980-12-01',
-    'contrasenna': '123'
+    'contrasenna': 'paola123'
 
 }];

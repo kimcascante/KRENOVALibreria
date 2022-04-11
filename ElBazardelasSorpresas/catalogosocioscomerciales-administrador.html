@@ -4,96 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width" , initial-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet " href="css/reset.css ">
     <link rel="stylesheet " href="css/catalogolibros-administrador.css ">
     <title>Document</title>
 </head>
+
 <body>
-    <section id="sct-buscasocio "> 
+    <section id="sct-buscasocio ">
         <div class="titulo-listadosocio ">
             <h1>LISTADO DEL CATALOGO DE SOCIOS COMERCIALES</h1>
         </div>
-    <form>
-        <div class="panel-buscasocio ">
-             <div class="titulo-buscasocio ">
-             <h1>Buscar en Catálogo de Socios Comerciales</h1>
-            </div> 
-         
-            <div class="input-buscasocio ">
-                <label for="txtidSocio ">Id_socio</label>
-                <input type="text "id="txtidSocio ">
-            </div>
+        <form>
+            <div class="panel-buscasocio ">
+                <div class="titulo-buscasocio ">
+                    <h1>Buscar en Catálogo de Socios Comerciales</h1>
+                </div>
 
-            <div class="input-buscasocio ">
-                <label for="txtnombreSocio ">Nombre socio</label>
-                <input type="text "id="txtnombreSocio ">
+                <div class="input-buscasocio ">
+                    <label for="txtidSocio ">Id_socio</label>
+                    <input type="text " id="txtidSocio ">
+                </div>
+
+                <div class="input-buscasocio ">
+                    <label for="txtnombreSocio ">Nombre socio</label>
+                    <input type="text " id="txtnombreSocio ">
+                </div>
+
+                <div class="input-buscasocio ">
+                    <button type="button " id="btn-buscarsocio " class="btn-oscuro ">Buscar</button>
+                </div>
             </div>
-                    
-            <div class="input-buscasocio ">
-                <button type="button " id="btn-buscarsocio " class="btn-oscuro ">Buscar</button>
-            </div>
-        </div> 
-    </form>
+        </form>
     </section>
-        <hr>
-   <section id="sct-listarSocio ">
+    <hr>
+    <section id="sct-listarSocio ">
         <h1>Items del inventario</h1>
 
         <table id='tbl-listarSocio'>
-                <thead>
-                  <tr>
+            <thead>
+                <tr>
                     <th>Id_socio</th>
                     <th>Nombre socio</th>
                     <th>Dirección</th>
-                 </tr>
+                </tr>
 
-                </thead>
-            
-               <tbody>
- 
-               </tbody>
-              <tfoot>
-                  <tr>
-                      <td>TOTAL DE REGISTROS: 2 ITEMS</td>
-                  </tr>
-                  
-              </tfoot>
-           
+            </thead>
+
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                </tr>
+
+            </tfoot>
+
         </table>
 
 
     </section>
     <section id="sct-control ">
         <form>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
-                <!--<i class="fa-solid fa-tags "></i>-->
-                <p>
-                    <strong>Nuevo</strong><br>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
+                    <!--<i class="fa-solid fa-tags "></i>-->
+                    <p>
+                        <strong>Nuevo</strong><br>
 
-                </p>
-            </a>
-          </div>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
-                 <p>
-                    <strong>Modificar</strong><br>
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
+                    <p>
+                        <strong>Modificar</strong><br>
 
-                </p>
-            </a>
-          </div>
-          <div class="btn-control ">
-            <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
-                <p>
-                    <strong>Eliminar</strong><br>
+                    </p>
+                </a>
+            </div>
+            <div class="btn-control ">
+                <a href="utilitarioCatalogoSociosAdministrador.html " class=btn-listalibros>
+                    <p>
+                        <strong>Eliminar</strong><br>
 
-                </p>
-            </a>
-         </div>
-     
+                    </p>
+                </a>
+            </div>
 
-       <!-- <div class="btn-control ">
+
+            <!-- <div class="btn-control ">
             <button type="button " id="btn-nuevolibro " class="btn-oscuro " onclick="href='panel-administrador.html' ">Nuevo</button>
            
         </div>
@@ -108,18 +109,19 @@
 
         </form>
     </section>
-        
+
 
 
     <a href="panel-administrador.html ">
-    <i class="fa-solid fa-tags "></i>
+        <i class="fa-solid fa-tags "></i>
         <p>
-        <strong>Regresar al Menu</strong><br>
+            <strong>Regresar al Menu</strong><br>
         </p>
     </a>
     <script src="js/socioscomerciales.js "></script>
     <script src="js/listar-catalogosocios.js "></script>
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 
 </body>
+
 </html>
