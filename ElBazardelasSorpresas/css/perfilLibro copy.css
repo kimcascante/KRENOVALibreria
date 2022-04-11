@@ -1,0 +1,48 @@
+#sct-content section {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dv-libro {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sct-content label {
+    margin: 10px;
+}
+
+.dv-resenna label {
+    font-weight: bold;
+}
+
+.dv-resenna p {
+    margin: 25px;
+}
+
+select {
+    width: 35px;
+}
+
+#lb-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.dv-libro a {
+    text-decoration: underline;
+    color: #a20cd4;
+}
+
+.dv-button button {
+    width: 150px;
+    height: 30px;
+    background-color: #d4a20c;
+    border-radius: 15px;
+}
