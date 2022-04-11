@@ -3,5 +3,9 @@
 }
 
 select {
-    margin: auto;
+    width: auto;
+}
+
+#sct-tarifadomicilio h1 {
+    color: red;
 }
