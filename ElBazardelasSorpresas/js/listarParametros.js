@@ -16,8 +16,6 @@ const mostrarDatos = () => {
         fila.insertCell().textContent = impuesto.estado;
 
     });
-
-
 };
 
 mostrarDatos();
