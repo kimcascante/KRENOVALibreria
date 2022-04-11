@@ -1,36 +1,34 @@
 const botonRegistrar = document.getElementById('btn-registrar');
-const botonModificar = document.getElementById('btn-modificar');
 const botonCancelar = document.getElementById('btn-cancelar');
-const inputIsbn = document.getElementById('txt-isbn');
-const inputNombreLibro = document.getElementById('txt-nombrelibro');
-const inputAutor = document.getElementById('txt-autor');
-const inputFechaPublicacion = document.getElementById('txt-fechapubli');
+const idAutor = document.getElementById('txt-idautor');
+const fotoAutor = document.getElementById('txt-imagenAutor');
+const nombreAutor = document.getElementById('txt-nombreautor');
+const listaPais = document.getElementById('slt-paises');
+const fechaNacimiento = document.getElementById('txt-fechanaci');
+const fechaDefuncion = document.getElementById('txt-fechadefu');
 const listaGenero = document.getElementById('slt-genero');
-const inputEditorial = document.getElementById('txt-editorial');
-const inputPremios = document.getElementById('txt-premios');
-const inputResenna = document.getElementById('txt-resenna');
-const inputPsubTotal = document.getElementById('txt-psubtotal');
-const inputUtilidad = document.getElementById('txt-utilidad');
-const listaImpuesto = document.getElementById('slt-impuesto');
-const inputDescuento = document.getElementById('txt-descuento');
-const inputPfinal = document.getElementById('txt-pfinal');
-const inputInvInicial = document.getElementById('txt-invinicial');
+const librosPublicados = document.getElementById('ctx-libropubli');
+const premiosGanados = document.getElementById('ctx-premiosganados');
+const fechaPremio = document.getElementById('fechaPremio');
+const resennaAutor = document.getElementById('ctx-resennautor');
+const libroEscrito = document.getElementById('ctx-libroescrito');
 
+/*const imprimir = () => {
+    let id = idAutor.value;
+    let foto = fotoAutor.value;
+    let nombre = nombreAutor.value;
+    let Pais = listaPais.value;
 
-const imprimir = () => {
-    let Isbn = inputIsbn.value;
-    let nombrelibro = inputNombreLibro.value;
-    let Autor = inputAutor.value;
-    let publicacion = inputFechaPublicacion.value;
-
-    console.log('El ISBN es:', Isbn);
-    console.log('El nombre del libro es:', nombrelibro);
-    console.log('El nombre del autor es:', Autor);
-    console.log('La fecha de publicación es:', publicacion);
+    console.log('El ID de autor es:', id);
+    console.log('la foto de autor es:', foto);
+    console.log('El nombre del autor es:', nombre);
+    console.log('El pais  es:', Pais);
 };
 
+imprimir();
+*/
 //procedimiento seleccionar Premio Nobel
-const fechaPremio = document.getElementById('fechaPremio');
+//const fechaPremio = document.getElementById('fechaPremio');
 
 //evento No
 document.getElementById('noGanaPremio').addEventListener('click', function(e) {
@@ -38,102 +36,107 @@ document.getElementById('noGanaPremio').addEventListener('click', function(e) {
 });
 
 //evento sí
+let habilita = 0;
 document.getElementById('siGanaPremio').addEventListener('click', function(e) {
     fechaPremio.disabled = false;
+    habilita = 1;
 });
 
-
-
-
-
-
-//Creación de función para validación
-
-function validar() {
+//Construcción de función validar.
+const validar = () => {
     let hayError = false;
 
-    if (inputIsbn.value == '') {
+    if (idAutor.value == '') {
         hayError = true;
-    } else {}
-
-    if (inputNombreLibro.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputAutor.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputFechaPublicacion.value == '') {
-        hayError = true;
-    } else {}
-
-    if (listaGenero.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputEditorial.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputPremios.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputResenna.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputPsubTotal.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputUtilidad.value == '') {
-        hayError = true;
-    } else {}
-
-    if (listaImpuesto.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputDescuento.value == '') {
-        hayError = true;
-    } else {}
-
-    if (inputPfinal.value == '') {
-        hayError = true;
-    } else {}
-
-
-
-    if (inputInvInicial.value == '') {
-        hayError = true;
+    } else {
 
     }
 
-    //Validación final
+    if (fotoAutor.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (nombreAutor.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (listaPais.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (fechaNacimiento.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (fechaDefuncion.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (listaGenero.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (librosPublicados.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (premiosGanados.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (fechaPremio.value == '' && habilita == 1) {
+        hayError = true;
+    } else {
+
+    }
+
+    if (resennaAutor.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (libroEscrito.value == '') {
+        hayError = true;
+    }
+
+    //Validacion final
     if (hayError) {
         Swal.fire({
             'icon': 'warning',
-            'title': 'Item no registrado',
-            'text': 'Favor revisar todos los campos'
+            'title': 'Autor no registrado',
+            'text': 'Favor complete todos los campos'
         });
     } else {
         Swal.fire({
-            'icon': 'Exito',
-            'title': 'Item registrado',
+            'icon': 'success',
+            'title': 'Autor  registrado',
             'text': 'Registro completado!'
         }).then(() => {
-            //Redirecciona al listado de libros
-            window.location.href = 'catalogolibros-administrador.html';
+            //Redirecciona al listado de autores
+            window.location.href = 'catalogoautores-administrador.html'
         });
+
     };
+
 
 }
 
-
-
-
-//imprimir();
 
 botonRegistrar.addEventListener('click', validar);
