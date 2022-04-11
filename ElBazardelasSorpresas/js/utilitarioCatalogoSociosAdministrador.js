@@ -10,29 +10,104 @@ const listaProvincia = document.getElementById('slt-provincias');
 const listaCanton = document.getElementById('slt-cantones');
 const listaDistrito = document.getElementById('slt-distritos');
 const sennasSocio = document.getElementById('txt-sennaSocio');
-const inputPuntoRetiro = document.getElementById('nopuntoRetiro')
 
-//Función imprimir
+
+/*Función imprimir
 const imprimir = () => {
     let id = inputIDsocio.value;
     let imagen = inputImagenSocio.value;
-    let retiro = inputPuntoRetiro.value;
+    let nombreSocio = inputNombreSocio.value;
 
     console.log('El ID del socio es:', id);
     console.log('La imagen del socio es:', imagen);
-    console.log('es o no punto de retiro:', retiro);
+    console.log('El nombre de socio es:', nombreSocio);
 };
 
+imprimir();
+*/
 
-//evento No
-document.getElementById('nopuntoRetiro').addEventListener('click', function(e) {
-    fechaPremio.disabled = true;
-});
+//Creación de funcion de validación
+const validar = () => {
+    let hayError = false;
 
-//evento sí
-let habilita = 0;
-document.getElementById('sipuntoRetiro').addEventListener('click', function(e) {
-            fechaPremio.disabled = false;
-            habilita = 1;
+    if (inputIDsocio.value == '') {
+        hayError = true;
+    } else {
 
-            imprimir();
+    }
+
+    if (inputImagenSocio.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (inputNombreSocio.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (inputFechaIngreso.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (inputTelefono.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (inputCorreo.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (listaProvincia.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (listaCanton.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (listaDistrito.value == '') {
+        hayError = true;
+    } else {
+
+    }
+
+    if (sennasSocio.value == '') {
+        hayError = true;
+    }
+
+    //Validacion final
+    if (hayError) {
+        Swal.fire({
+            'icon': 'warning',
+            'title': 'Socio comercial no registrado',
+            'text': 'Favor complete todos los campos'
+        });
+    } else {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'Socio comercial registrado',
+            'text': 'Registro completado!'
+        }).then(() => {
+            //Redirecciona al listado de socios comerciales
+            window.location.href = 'catalogosocioscomerciales-administrador.html'
+        });
+
+    };
+
+
+}
+
+botonRegistrar.addEventListener('click', validar);
