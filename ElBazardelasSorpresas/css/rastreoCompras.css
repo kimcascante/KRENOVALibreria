@@ -1,0 +1,144 @@
+#contenido {
+    height: 850px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cuadro {
+    height: 700px;
+    width: 800px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titulo-principal {
+    font-size: 25px;
+    color: black;
+    font-family: tahoma;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 670px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.fechaPedido {
+    display: flex;
+    flex-direction: row;
+}
+
+.fecha {
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.pedido {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.status {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 55px;
+    border: 2px solid #000;
+    background-color: greenyellow;
+}
+
+.textoStatus {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+:root {
+    --linea--borde-relleno: #3498db;
+    --linea--borde-vacio: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedorBarra {
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 100px;
+}
+
+.progreso-contenedor {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 600px;
+}
+
+.progreso-contenedor::before {
+    content: '';
+    background-color: var(--linea--borde-vacio);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.progreso {
+    background-color: var(--linea--borde-relleno);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circulo {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--linea--borde-vacio);
+    transition: 0.4s ease;
+}
+
+.circulo.active {
+    border-color: black;
+    background-color: greenyellow;
+    color: #000;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: var(--linea--borde-vacio);
+    cursor: not-allowed;
+}
+
+.detallesEntrega {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 70px;
+}
