@@ -78,7 +78,7 @@ const validar = () => {
             'text': 'Registro completado!'
         }).then(() => {
             //Redirecciona al listado de autores
-            window.location.href = 'promociones-administrador.html'
+            window.location.href = 'promociones.html'
         });
 
     };
