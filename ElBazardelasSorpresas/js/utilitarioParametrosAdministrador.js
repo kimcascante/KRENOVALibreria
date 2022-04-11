@@ -5,6 +5,24 @@ const inputEstado = document.getElementById('slt-genero');
 const botonGuardar = document.getElementById('btn-registrar');
 
 
+
+
+const imprimir = () => {
+    let impuesto = inputImpuesto.value;
+    let nombre = inputNombre.value;
+    let porcentaje = inputPorcentaje.value;
+    let estado = inputEstado.value;
+
+
+    console.log('', impuesto);
+    console.log('', nombre);
+    console.log('', porcentaje);
+    console.log('', estado);
+};
+imprimir();
+
+botonGuardar.addEventListener('click', imprimir);
+
 const validar = () => {
     let hayError = false;
 
