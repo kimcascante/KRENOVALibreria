@@ -1,0 +1,19 @@
+    #sct-content div {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #sct-content {
+        columns: 2;
+    }
+    
+    #sct-content label {
+        padding: 2px;
+    }
+    
+    #lb-title {
+        font-weight: bold;
+    }

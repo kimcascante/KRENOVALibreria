@@ -1,0 +1,48 @@
+#sct-content div {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-club img {
+    margin: 25px;
+    width: 500px;
+}
+
+.dv-club {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dv-club label {
+    width: 200px;
+}
+
+#sct-content .dv-clubLibroFan {
+    width: 250px;
+    border: 2px black;
+}
+
+#sct-libros div {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sct-libros {
+    columns: 3;
+}
+
+#sct-content label {
+    padding: 2px;
+}
+
+#lb-titulo {
+    font-weight: bold;
+}
