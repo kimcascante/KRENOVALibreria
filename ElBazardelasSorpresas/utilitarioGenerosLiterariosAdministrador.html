@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/utilitario catalogolibros-administrador.css">
+    <link rel="stylesheet" href="css/catalogolibros-administrador.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="sct-registro">
+        <form>
+            <div class="etiqueta-titulo">
+                <h1>Perfil de géneros literarios</h1>
+            </div>
+
+            <div class="input-container">
+                <label for="txt-idGenero">Id_género</label>
+                <input type="text" id="txt-idGenero">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombreGenero">Nombre género</label>
+                <input type="text" id="txt-nombreGenero" autocomplete="off">
+            </div>
+
+
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
+            </div>
+
+            <div class="btn-control">
+                <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
+            </div>
+
+        </form>
+
+    </section>
+    <section id="sct-listarGenero">
+        <table id="tbl-listarGenero">
+            <thead>
+                <tr>
+                    <th>Id_género</th>
+                    <th>Nombre género</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 6 ITEMS</td>
+                </tr>
+
+            </tfoot>
+        </table>
+        <a href="generosliterarios-administrador.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <strong>Regresar al listado géneros literarios</strong><br>
+            </p>
+        </a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
+    <script src="js/generos.js"></script>
+
+    <script src="js/listar-generos.js "></script>
+
+
+
+
+</body>
+
+</html>
