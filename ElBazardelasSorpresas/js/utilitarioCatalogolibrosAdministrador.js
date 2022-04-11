@@ -133,7 +133,7 @@ const validar = () => {
             'text': 'Registro completado!'
         }).then(() => {
             //Redirecciona al listado de libros
-            window.location.href = 'catalogolibros-administrador.html'
+            window.location.href = 'catalogoLibrosAdministrador.html'
         });
     };
 

@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
     <title>Puntos de retiro</title>
 </head>
 
@@ -36,24 +38,119 @@
 
     </section>
 
+
     <section>
 
-        <h2>En proceso de construcción</h2>
+        <form>
+            <div class="etiqueta-titulo">
+                <h1>Perfil del punto de retiro</h1>
+            </div>
+
+            <div class="input-container">
+                <label for="txt-idSocio">Id_socio</label>
+                <input type="text" id="txt-idSocio">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombreSocio">Nombre socio</label>
+                <input type="text" id="txt-nombreSocio" autocomplete="off">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-idPunto">Id_punto</label>
+                <input type="text" id="txt-idPunto">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-nombrePunto">Nombre punto</label>
+                <input type="text" id="txt-nombrePunto" autocomplete="off">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-telefonoPunto">Telefono punto</label>
+                <input type="text" id="txt-telefonoPunto" autocomplete="off">
+            </div>
+
+            <div class="input-container">
+                <p>Dirección Socio Comercial</p>
+                <label for="slt-provincias">Provincia</label>
+                <select id="slt-provincias">
+                    <option value="">-- Seleccione una opción --</option>   
+                </select>
+                <label for="slt-cantones">Cantón</label>
+                <select id="slt-cantones">
+                    <option value="">-- Seleccione una opción --</option>   
+                </select>
+                <label for="slt-distritos">Distrito</label>
+                <select id="slt-distritos">
+                    <option value="">-- Seleccione una opción --</option>   
+                </select>
+                <div class="input-dirSocio">
+                    <label for="txt-sennaSocio">Otras señas</label>
+                    <input type="email" id="txt-sennaSocio" autocomplete="off">
+                </div>
+
+            </div>
+
+            <div class="input-container">
+                <p>Ubicación punto retiro</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.67874091155!2d-84.14836473359803!3d9.935628376394838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342c50d15c5%3A0xe6746a6a9f11b882!2zU2FuIEpvc8Op!5e0!3m2!1ses!2scr!4v1649615126185!5m2!1ses!2scr"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
 
-        <a href="homePageAdmin.html ">
-            <i class="fa-solid fa-tags "></i>
-            <p>
-                <strong>Regresar al Menu</strong><br>
-            </p>
-        </a>
+
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
+            </div>
+
+            <div class="btn-control">
+                <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
+            </div>
+
+        </form>
+
+        <div class="img-contenedor">
+
+        </div>
+
+
 
     </section>
 
+    </section>
+    <section id="sct-listarPunto">
+        <table id="tbl-listarPunto">
+            <thead>
+                <tr>
+                    <th>Id_punto</th>
+                    <th>Nombre punto</th>
+                    <th>Id_socio</th>
+                    <th>Nombre socio</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                </tr>
+
+            </tfoot>
+        </table>
+        <a href="catalogopuntosretiro-administrador.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <strong>Regresar al listado puntos retiro</strong><br>
+            </p>
+        </a>
+    </section>
 
 
-
-    <!-- <section id="sct-footer">
+    <section id="sct-footer">
         <footer>
             <div class="dv-contacto">
                 <label for="">Servicio al cliente</label>
@@ -66,8 +163,14 @@
                 <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
             </div>
         </footer>
-    </section> -->
+    </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="js/utilitarioCatalogoPuntosRetiroAdministrador.js"></script>
+    <script src="js/puntosretiro.js "></script>
+    <script src="js/distribucion-cr.js "></script>
+    <script src="js/formulario.js "></script>
+    <script src="js/listarPuntosRetiro.js "></script>
 
 </body>
 

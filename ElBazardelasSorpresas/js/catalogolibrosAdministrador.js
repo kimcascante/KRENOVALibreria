@@ -5,7 +5,8 @@ const inputnombreLibro = document.getElementById('txtnombreLibro ');
 
 
 /*const inputModificar = document.getElementById('txtlibroModificar');
-const inputEliminar = document.getElementById('txtlibroEliminar');*/
+const inputEliminar 
+= document.getElementById('txtlibroEliminar');*/
 let libro = []
 
 const agregarlibro = () => {

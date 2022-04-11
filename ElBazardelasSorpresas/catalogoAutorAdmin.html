@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/homePageAdmin.css">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
     <title>Cátalogo autor</title>
 </head>
 
@@ -36,24 +38,81 @@
 
     </section>
 
-    <section>
+    <section id="sct-container">
 
-        <h2>En proceso de construcción</h2>
+        <section id="sct-buscarlibro">
+            <form>
+                <div class="dv-buscarLibro">
+                    <div class="dv-buscaCatalogo">
+                        <h1>Buscar en catálogo de autores</h1>
+                    </div>
 
+                    <div class="input-buscautor ">
+                        <label for="txtidAutor ">ID Autor</label>
+                        <input type="text " id="txtidAutor ">
+                    </div>
 
-        <a href="homePageAdmin.html ">
-            <i class="fa-solid fa-tags "></i>
-            <p>
-                <strong>Regresar al Menu</strong><br>
-            </p>
-        </a>
+                    <div class="input-buscautor ">
+                        <label for="txtnombreAutor ">Nombre Autor</label>
+                        <input type="text " id="txtnombreAutor ">
+                    </div>
+
+                    <div class="input-buscalibro ">
+                        <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="sct-listarLibros">
+            <h1>Inventario</h1>
+
+            <table id='tbl-listarAutor'>
+                <thead>
+                    <tr>
+                        <th>ID Autor</th>
+                        <th>Nombre autor</th>
+                        <th>País Nacimiento</th>
+                        <th>Fecha Nacimiento</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total de registros: 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="sct-control ">
+            <form>
+                <div class="btn-control ">
+                    <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
+                        <!--<i class="fa-solid fa-tags "></i>-->
+                        <button type="button">Nuevo</button>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
+                        <button type="button">Modificar</button>
+                    </a>
+                </div>
+                <div class="btn-control ">
+                    <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
+                        <button type="button">Eliminar</button>
+                    </a>
+                </div>
+            </form>
+        </section>
 
     </section>
 
-
-
-
-    <!-- <section id="sct-footer">
+    <section id="sct-footer">
         <footer>
             <div class="dv-contacto">
                 <label for="">Servicio al cliente</label>
@@ -66,9 +125,11 @@
                 <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
             </div>
         </footer>
-    </section> -->
+    </section>
 
-
+    <script src="js/autores.js "></script>
+    <script src="js/listarCatalogoAutores.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 </body>
 
 </html>
