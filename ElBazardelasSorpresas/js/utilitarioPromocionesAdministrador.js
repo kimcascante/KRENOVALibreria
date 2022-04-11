@@ -1,49 +1,90 @@
-/*<input type="radio" name="radioTipoPromocion" value="1" id="porArticulo" checked>por Artículo
-<input type="radio" name="radioTipoPromocion" value="2" id="porGenero">por Genero
-<input type="radio" name="radioTipoPromocion" value="3" id="porAutor">por Autor
-<input type="radio" name="radioTipoPromocion" value="4" id="General">General*/
-
-/*<label for="txt-idCodigo">Codigo item</label>
-<input type="number" name="numCodigo" id="idCodigo" disabled="false">
-<label for="txt-nombreItem">Nombre item</label>
-<input type="text" name="nomItem" id="nombreItem" disabled="false">*/
-
-/*<div class="input-container">
-<p>Ganador de premio nobel</p>
-<p>
-    <input type="radio" name="radioNobelPaz" value="si" id="siGanaPremio">Sí
-    <input type="radio" name="radioNobelPaz" value="no" id="noGanaPremio" checked>No
-</p>
-<p>
-    <input type="date" name="premio" id="fechaPremio" disabled="false">
-</p>
-
-</div>*/
-/*      <input type="radio" name="radioTipoPromocion" value="1" id="porArticulo" checked>por Artículo
-                    <input type="radio" name="radioTipoPromocion" value="2" id="porGenero">por Genero
-                    <input type="radio" name="radioTipoPromocion" value="3" id="porAutor">por Autor
-                    <input type="radio" name="radioTipoPromocion" value="4" id="General">General */
-//procedimiento seleccionar Premio Nobel
+const botonRegistrar = document.getElementById('btn-registrar');
+const botonLimpiar = document.getElementById('btn-cancelar');
+const inputidPromocion = document.getElementById('txt-idPromocion');
+const inputNombrePromocion = document.getElementById('txt-nombrePromocion');
+const inputFechaInicia = document.getElementById('txt-fechainicia');
+const inputFechaFinal = document.getElementById('txt-fechafinal');
 const idCodigo = document.getElementById('idCodigo');
 const nombreItem = document.getElementById('nombreItem');
+const inputDescuento = document.getElementById('txt-descuento');
 
-//evento por Articulo
+let habilita = 1;
+
 document.getElementById('porArticulo').addEventListener('click', function(e) {
     idCodigo.disabled = false;
     nombreItem.disabled = false;
+
 });
 
 document.getElementById('porGenero').addEventListener('click', function(e) {
     idCodigo.disabled = false;
     nombreItem.disabled = false;
+
 });
 
 document.getElementById('porAutor').addEventListener('click', function(e) {
     idCodigo.disabled = false;
     nombreItem.disabled = false;
+
 });
 
 document.getElementById('General').addEventListener('click', function(e) {
     idCodigo.disabled = true;
     nombreItem.disabled = true;
+    habilita = 0;
 });
+
+
+//Función de validación.
+const validar = () => {
+    let hayError = false;
+
+    if (inputidPromocion.value == '') {
+        hayError = true;
+    } else if (inputNombrePromocion.value == '') {
+        hayError = true;
+    } else if (inputFechaInicia.value == '') {
+        hayError = true;
+    } else if (inputFechaFinal.value == '') {
+        hayError = true;
+    };
+
+    if (habilita == 1) {
+        habilita = 0;
+
+        if (idCodigo.value == '') {
+            hayError = true;
+        } else if (nombreItem.value == '') {
+            hayError = true;
+        } else if (inputDescuento.value == '') {
+            hayError = true;
+        }
+    } else if (habilita == 0) {
+        if (inputDescuento.value == '') {
+            hayError = true;
+        }
+    };
+    //Validacion final
+    if (hayError) {
+        Swal.fire({
+            'icon': 'warning',
+            'title': 'Promoción no registrada',
+            'text': 'Favor complete todos los campos'
+        });
+    } else {
+        Swal.fire({
+            'icon': 'success',
+            'title': 'Promoción  registrada',
+            'text': 'Registro completado!'
+        }).then(() => {
+            //Redirecciona al listado de autores
+            window.location.href = 'promociones-administrador.html'
+        });
+
+    };
+
+
+}
+
+
+botonRegistrar.addEventListener('click', validar);
