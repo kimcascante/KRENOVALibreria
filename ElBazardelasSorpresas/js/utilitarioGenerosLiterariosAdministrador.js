@@ -30,7 +30,7 @@ const validar = () => {
             'text': 'Registro completado!'
         }).then(() => {
             //Redirecciona al listado de autores
-            window.location.href = 'generosliterarios-administrador.html'
+            window.location.href = 'utilitarioGenerosLiterariosAdministrador.html'
         });
 
     };
