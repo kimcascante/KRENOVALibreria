@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="ccs/catalogolibrosAdministrador">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.css">
     <title>Géneros literarios</title>
 </head>
 
@@ -36,91 +37,91 @@
         </div>
 
     </section>
-    <section id="sct-buscagenero ">
-        <div class="titulo-listadogenero ">
-            <h1>LISTADO DE GÉNEROS LITERARIOS</h1>
-        </div>
-        <form>
-            <div class="panel-buscagenero ">
-                <div class="titulo-buscagenero ">
-                    <h1>Buscar en Listado de Géneros Literarios</h1>
+
+    <section id="sct-container">
+
+        <section id="sct-buscagenero">
+            <form>
+                <div class="dv-buscarLibro">
+                    <div class="titulo-buscagenero ">
+                        <h1>Buscar en catálogo de géneros literarios</h1>
+                    </div>
+
+                    <div class="input-buscagenero ">
+                        <label for="txtidGenero ">Id_género</label>
+                        <input type="text " id="txtidGenero ">
+                    </div>
+
+                    <div class="input-buscagenero ">
+                        <label for="txtnombreGenero ">Nombre género</label>
+                        <input type="text " id="txtnombreGenero ">
+                    </div>
+
+                    <div class="input-buscagenero ">
+                        <button type="button " id="btn-buscargenero " class="btn-busca">Buscar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id="sct-listarLibros">
+            <h1>Inventario</h1>
+
+            <table id='tbl-listarGenero'>
+                <thead>
+                    <tr>
+                        <th>Id_género</th>
+                        <th>Nombre género</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>TOTAL DE REGISTROS: 6 ITEMS</td>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+
+        </section>
+        <section id="sct-control">
+            <form>
+                <div class="btn-control">
+                    <a href="utilitarioGenerosLiterariosAdministrador.html" class=btn-listageneros>
+                        <!--<i class="fa-solid fa-tags "></i>-->
+                        <p>
+                            <button class="btn-oscuro"><strong>Nuevo</strong><br></button>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control">
+                    <a href="utilitarioGenerosLiterariosAdministrador.html" class=btn-listageneros>
+                        <p>
+                            <button class="btn-oscuro"><strong>Modificar</strong><br></button>
+
+                        </p>
+                    </a>
+                </div>
+                <div class="btn-control">
+                    <a href="utilitarioGenerosLiterariosAdministrador.html" class=btn-listageneros>
+                        <p>
+                            <button class="btn-oscuro"><strong>Eliminar</strong><br></button>
+
+                        </p>
+                    </a>
                 </div>
 
-                <div class="input-buscagenero ">
-                    <label for="txtidGenero ">Id_género</label>
-                    <input type="text " id="txtidGenero ">
-                </div>
 
-                <div class="input-buscagenero ">
-                    <label for="txtnombreGenero ">Nombre género</label>
-                    <input type="text " id="txtnombreGenero ">
-                </div>
+            </form>
+        </section>
 
-                <div class="input-buscagenero ">
-                    <button type="button " id="btn-buscargenero " class="btn-oscuro ">Buscar</button>
-                </div>
-            </div>
-        </form>
     </section>
-    <hr>
-    <section id="sct-listarGenero ">
-        <h1>Items del inventario</h1>
-
-        <table id='tbl-listarGenero'>
-            <thead>
-                <tr>
-                    <th>Id_género</th>
-                    <th>Nombre género</th>
-                </tr>
-
-            </thead>
-
-            <tbody>
-
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>TOTAL DE REGISTROS: 6 ITEMS</td>
-                </tr>
-
-            </tfoot>
-
-        </table>
-
-
-    </section>
-    <section id="sct-control ">
-        <form>
-            <div class="btn-control ">
-                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
-                    <!--<i class="fa-solid fa-tags "></i>-->
-                    <p>
-                        <strong>Nuevo</strong><br>
-
-                    </p>
-                </a>
-            </div>
-            <div class="btn-control ">
-                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
-                    <p>
-                        <strong>Modificar</strong><br>
-
-                    </p>
-                </a>
-            </div>
-            <div class="btn-control ">
-                <a href="utilitarioGenerosLiterariosAdministrador.html " class=btn-listageneros>
-                    <p>
-                        <strong>Eliminar</strong><br>
-
-                    </p>
-                </a>
-            </div>
-
-
-        </form>
-    </section>
-
 
 
 

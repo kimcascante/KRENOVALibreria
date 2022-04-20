@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogos.css">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
     <title>Puntos de retiro</title>
 </head>
@@ -38,13 +38,10 @@
 
     </section>
 
-
-    <section>
+    <section id="sct-registro">
 
         <form>
-            <div class="etiqueta-titulo">
-                <h1>Perfil del punto de retiro</h1>
-            </div>
+            <h1>Registro de puntos de retiro</h1>
 
             <div class="input-container">
                 <label for="txt-idSocio">Id_socio</label>
@@ -73,18 +70,28 @@
 
             <div class="input-container">
                 <p>Dirección Socio Comercial</p>
-                <label for="slt-provincias">Provincia</label>
-                <select id="slt-provincias">
-                    <option value="">-- Seleccione una opción --</option>   
-                </select>
-                <label for="slt-cantones">Cantón</label>
-                <select id="slt-cantones">
-                    <option value="">-- Seleccione una opción --</option>   
-                </select>
-                <label for="slt-distritos">Distrito</label>
-                <select id="slt-distritos">
-                    <option value="">-- Seleccione una opción --</option>   
-                </select>
+
+                <div>
+                    <label for="slt-provincias">Provincia</label>
+                    <select id="slt-provincias">
+                        <option value="">-- Seleccione una opción --</option>   
+                    </select>
+                </div>
+
+                <div>
+                    <label for="slt-cantones">Cantón</label>
+                    <select id="slt-cantones">
+                        <option value="">-- Seleccione una opción --</option>   
+                    </select>
+                </div>
+
+                <div>
+                    <label for="slt-distritos">Distrito</label>
+                    <select id="slt-distritos">
+                        <option value="">-- Seleccione una opción --</option>   
+                    </select>
+                </div>
+
                 <div class="input-dirSocio">
                     <label for="txt-sennaSocio">Otras señas</label>
                     <input type="email" id="txt-sennaSocio" autocomplete="off">
@@ -102,9 +109,7 @@
 
             <div class="btn-control">
                 <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
-            </div>
 
-            <div class="btn-control">
                 <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
             </div>
 
@@ -118,7 +123,6 @@
 
     </section>
 
-    </section>
     <section id="sct-listarPunto">
         <table id="tbl-listarPunto">
             <thead>
@@ -141,12 +145,7 @@
 
             </tfoot>
         </table>
-        <a href="catalogopuntosretiro-administrador.html">
-            <i class="fa-solid fa-tags "></i>
-            <p>
-                <strong>Regresar al listado puntos retiro</strong><br>
-            </p>
-        </a>
+
     </section>
 
 

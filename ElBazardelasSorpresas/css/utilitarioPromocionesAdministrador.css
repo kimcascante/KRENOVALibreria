@@ -1,0 +1,21 @@
+form .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+form .input-containerPromo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radios input {
+    margin: 5px;
+}

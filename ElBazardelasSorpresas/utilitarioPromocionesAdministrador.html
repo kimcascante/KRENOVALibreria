@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.cssx">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
-    <link rel="stylesheet" href="css/utilitarioCatalogoAutoresAdministrador.css">
+    <link rel="stylesheet" href="css/utilitarioPromocionesAdministrador.css">
+    <link rel="stylesheet" href="css/catalogos.css">
+
+
 
     <title>Registro de Promociones</title>
 </head>
@@ -22,7 +24,7 @@
         </div>
 
         <div class="div-titulo">
-            <h2 class="titulo-panel">Registro libro</h2>
+            <h2 class="titulo-panel">Registro de promociones</h2>
         </div>
 
         <div class="dv-opciones">
@@ -43,45 +45,50 @@
 
     <section id="sct-registro">
         <form>
-            <div class="etiqueta-titulo">
-                <h1>Registro de promociones</h1>
-            </div>
 
             <div class="input-container">
-                <label for="txt-idPromocion">Id_promocion</label>
+                <label for="txt-idPromocion">ID de la promoción</label>
 
                 <input type="text" id="txt-idPromocion">
             </div>
 
             <div class="input-container">
-                <label for="txt-nombrePromocion">Nombre promocion</label>
+                <label for="txt-nombrePromocion">Nombre de la promocion</label>
                 <input type="text" id="txt-nombrePromocion">
             </div>
 
             <div class="input-container">
-                <label for="txt-fechainicia">Fecha Inicia</label>
+                <label for="txt-fechainicia">Fecha que inicia</label>
                 <input type="date" id="txt-fechainicia">
             </div>
             <div class="input-container">
-                <label for="txt-fechafinal">Fecha Finaliza</label>
+                <label for="txt-fechafinal">Fecha de finalización</label>
                 <input type="date" id="txt-fechafinal">
+            </div>
+
+            <div class="input-container">
+
+                <label for="txt-descuento">Porcentaje de descuento</label>
+                <input type="number" id="txt-descuento">
+
             </div>
             <div class="input-container">
                 <p>Tipo promoción</p>
-                <p>
+
+                <p class="radios">
                     <input type="radio" name="radioTipoPromocion" value="1" id="porArticulo">por Artículo
                     <input type="radio" name="radioTipoPromocion" value="2" id="porGenero">por Genero
                     <input type="radio" name="radioTipoPromocion" value="3" id="porAutor">por Autor
                     <input type="radio" name="radioTipoPromocion" value="4" id="General" checked>General
                 </p>
-                <p>
+
+                <p class="radios">
                     <label for="txt-idCodigo">Codigo item</label>
                     <input type="number" name="numCodigo" id="idCodigo" disabled="false">
                     <label for="txt-nombreItem">Nombre item</label>
                     <input type="text" name="nomItem" id="nombreItem" disabled="false">
                 </p>
-                <label for="txt-descuento">Descuento</label>
-                <input type="number" id="txt-descuento">
+
             </div>
 
 
@@ -89,9 +96,7 @@
 
             <div class="btn-control">
                 <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
-            </div>
 
-            <div class="btn-control">
                 <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
             </div>
 
@@ -103,7 +108,8 @@
 
 
     </section>
-    <section id="sct-listar">
+    <section id="sct-listarLibros">
+        <h1>Inventario</h1>
         <table id="tbl-listarPromociones">
             <thead>
                 <tr>
@@ -131,7 +137,7 @@
         <a href="promociones.html">
             <i class="fa-solid fa-tags "></i>
             <p>
-                <strong>Regresar al listado promociones</strong><br>
+                <button class="btn-oscuroL"><strong>Regresar al listado autores</strong><br></button>
             </p>
         </a>
     </section>

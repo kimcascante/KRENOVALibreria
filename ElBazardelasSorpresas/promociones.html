@@ -37,20 +37,19 @@
 
     </section>
 
-    <section>
+    <section id="sct-container">
 
-        <section id="sct-buscarautor ">
-            <div class="titulo-listadoautor ">
-                <h1>LISTADO DE PROMOCIONES REGISTRADAS</h1>
-            </div>
-            <form>
-                <div class="panel-buscapromocion ">
-                    <div class="titulo-buscapromocion ">
+        <section id="sct-buscarlibro">
+            <form action="">
+
+                <div class="dv-buscarLibro">
+
+                    <div class="dv-buscaCatalogo">
                         <h1>Buscar en Lista de Promociones</h1>
                     </div>
 
                     <div class="input-buscapromociones ">
-                        <label for="txtidAutor ">Id_Autor</label>
+                        <label for="txtidAutor ">ID Autor</label>
                         <input type="text " id="txtidAutor ">
                     </div>
 
@@ -60,13 +59,15 @@
                     </div>
 
                     <div class="input-buscalibro ">
-                        <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
+                        <button type="button " id="btn-buscarlibro " class="btn-busca">Buscar</button>
                     </div>
                 </div>
+                </div>
+
             </form>
         </section>
-        <hr>
-        <section id="sct-listarPromocion ">
+        <section id="sct-listarLibros">
+            <h1>Inventario</h1>
 
             <table id='tbl-listarPromociones'>
                 <thead>
@@ -101,7 +102,7 @@
                     <a href="utilitarioPromocionesAdministrador.html " class=btn-listapromociones>
                         <!--<i class="fa-solid fa-tags "></i>-->
                         <p>
-                            <strong>Nuevo</strong><br>
+                            <button type="button" class="btn-oscuro"><strong>Nuevo</strong><br></button>
 
                         </p>
                     </a>
@@ -109,7 +110,7 @@
                 <div class="btn-control ">
                     <a href="utilitarioPromocionesAdministrador.html " class=btn-listapromociones>
                         <p>
-                            <strong>Modificar</strong><br>
+                            <button type="button" class="btn-oscuro"><strong>Modificar</strong><br></button>
 
                         </p>
                     </a>
@@ -117,7 +118,7 @@
                 <div class="btn-control ">
                     <a href="utilitarioPromocionesAdministrador.html " class=btn-listapromociones>
                         <p>
-                            <strong>Eliminar</strong><br>
+                            <button type="button" class="btn-oscuro"><strong>Eliminar</strong><br></button>
 
                         </p>
                     </a>

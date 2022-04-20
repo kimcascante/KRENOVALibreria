@@ -1,0 +1,15 @@
+form .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+form div {
+    margin: 10px;
+}
+
+.radios {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}

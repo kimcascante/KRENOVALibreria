@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogos.css">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
     <title>Socios comerciales</title>
 </head>
@@ -38,139 +38,133 @@
 
     </section>
 
-    <section>
 
-        <section id="sct-registro">
-            <form>
-                <div class="etiqueta-titulo">
-                    <h1>Perfil del socio comercial</h1>
-                </div>
+    <section id="sct-registro">
+        <form>
+            <h1>Registro de socios comerciales</h1>
 
-                <div class="input-container">
-                    <label for="txt-idSocio">Id_socio</label>
+            <div class="input-container">
+                <label for="txt-idSocio ">ID socio</label>
 
-                    <input type="text" id="txt-idSocio">
-                </div>
-
-                <div class="input-container">
-                    <label for="txt-imagenSocio">Foto Establecimiento</label>
-
-                    <input type="file" id="txt-imagenSocio">
-                </div>
-
-                <div class="input-container">
-                    <label for="txt-nombreSocio">Nombre socio</label>
-                    <input type="text" id="txt-nombreSocio" autocomplete="off">
-                </div>
-
-                <div class="input-container">
-                    <label for="txt-fechaIngreso">Fecha ingreso</label>
-                    <input type="date" id="txt-fechaIngreso" autocomplete="off">
-                </div>
-                <div class="input-container">
-                    <label for="txt-telefonoSocio">Telefono socio</label>
-                    <input type="text" id="txt-telefonoSocio" autocomplete="off">
-                </div>
-
-                <div class="input-container">
-                    <label for="txt-correoSocio">Correo socio</label>
-                    <input type="email" id="txt-correoSocio" autocomplete="off">
-                </div>
-                <div class="input-container">
-                    <p>Dirección Socio Comercial</p>
-                    <label for="slt-provincias">Provincia</label>
-                    <select id="slt-provincias">
-                        <option value="">-- Seleccione una opción --</option>   
-                    </select>
-                    <label for="slt-cantones">Cantón</label>
-                    <select id="slt-cantones">
-                        <option value="">-- Seleccione una opción --</option>   
-                    </select>
-                    <label for="slt-distritos">Distrito</label>
-                    <select id="slt-distritos">
-                        <option value="">-- Seleccione una opción --</option>   
-                    </select>
-                    <div class="input-dirSocio">
-                        <label for="txt-sennaSocio">Otras señas</label>
-                        <input type="email" id="txt-sennaSocio" autocomplete="off">
-                    </div>
-
-                </div>
-
-                <div class="input-container">
-                    <p>Puntos retiro</p>
-                    <p>
-                        <input type="radio" name="radiopuntoRetiro" value="si" id="sipuntoRetiro">Sí
-                        <input type="radio" name="radiopuntoRetiro" value="no" id="nopuntoRetiro" checked>No
-                    </p>
-                </div>
-
-
-
-                <div class="btn-control">
-                    <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
-                </div>
-
-                <div class="btn-control">
-                    <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
-                </div>
-
-            </form>
-
-            <div class="img-contenedor">
-
+                <input type="text " id="txt-idSocio ">
             </div>
 
+            <div class="input-container">
+                <label for="txt-imagenSocio ">Foto Establecimiento</label>
 
-        </section>
-        <section id="sct-listarSocio">
-            <table id="tbl-listarSocio">
-                <thead>
-                    <tr>
-                        <th>Id_socio</th>
-                        <th>Nombre socio</th>
-                        <th>Direccion</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <input type="file " id="txt-imagenSocio ">
+            </div>
 
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>TOTAL DE REGISTROS: 2 ITEMS</td>
-                    </tr>
+            <div class="input-container">
+                <label for="txt-nombreSocio ">Nombre socio</label>
+                <input type="text " id="txt-nombreSocio " autocomplete="off ">
+            </div>
 
-                </tfoot>
-            </table>
-            <a href="catalogosocioscomerciales-administrador.html">
-                <i class="fa-solid fa-tags "></i>
-                <p>
-                    <strong>Regresar al listado socios</strong><br>
+            <div class="input-container">
+                <label for="txt-fechaIngreso ">Fecha ingreso</label>
+                <input type="date " id="txt-fechaIngreso " autocomplete="off ">
+            </div>
+            <div class="input-container">
+                <label for="txt-telefonoSocio ">Telefono socio</label>
+                <input type="text " id="txt-telefonoSocio " autocomplete="off ">
+            </div>
+
+            <div class="input-container">
+                <label for="txt-correoSocio ">Correo socio</label>
+                <input type="email " id="txt-correoSocio " autocomplete="off ">
+            </div>
+
+            <div class="input-container">
+                <p>Dirección Socio Comercial</p>
+
+                <div>
+                    <label for="slt-provincias">Provincia</label>
+                    <select id="slt-provincias">
+                            <option value=" ">-- Seleccione una opción --</option>   
+                        </select>
+                </div>
+
+                <div>
+                    <label for="slt-cantones">Cantón</label>
+                    <select id="slt-cantones">
+                            <option value=" ">-- Seleccione una opción --</option>   
+                        </select>
+                </div>
+
+                <div>
+                    <label for="slt-distritos">Distrito</label>
+                    <select id="slt-distritos">
+                            <option value=" ">-- Seleccione una opción --</option>   
+                        </select>
+                </div>
+
+                <div>
+                    <label for="txt-sennaSocio ">Otras señas</label>
+                    <input type="email " id="txt-sennaSocio " autocomplete="off ">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <p>Puntos retiro</p>
+                <p class="radios">
+                    <input type="radio" name="radiopuntoRetiro" value="si" id="sipuntoRetiro">Sí
+                    <input type="radio" name="radiopuntoRetiro" value="no" id="nopuntoRetiro" checked>No
                 </p>
-            </a>
-        </section>
-
+            </div>
+        </form>
     </section>
 
+    <div class="btn-control">
+        <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
+    </div>
 
+    <div class="btn-control">
+        <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
+    </div>
+
+    <div class="img-contenedor">
+
+    </div>
+
+    <section id="sct-listarLibros">
+        <h1>Inventario</h1>
+        <table id="tbl-listarSocio">
+            <thead>
+                <tr>
+                    <th>ID Socio</th>
+                    <th>Nombre socio</th>
+                    <th>Direccion</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                </tr>
+
+            </tfoot>
+        </table>
+    </section>
 
 
     <section id="sct-footer">
         <footer>
-            <div class="dv-contacto">
-                <label for="">Servicio al cliente</label>
-                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
-                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
-                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
+            <div class="dv-contacto ">
+                <label for=" ">Servicio al cliente</label>
+                <a href="https://www.whatsapp.com/ "><img src="img/icons/whatsapp.png " alt="WhatsApp " height="20 " width="20 "></a>
+                <a href="https://www.facebook.com/ "><img src="img/icons/facebook.png " alt="Facebook " height="25 " width="25 "></a>
+                <a href="https://www.instagram.com/ "><img src="img/icons/instagram.png " alt="instagram " height="25 " width="25 "></a>
             </div>
 
-            <div class="dv-derechos">
-                <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
+            <div class="dv-derechos ">
+                <label for=" ">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
             </div>
         </footer>
     </section>
 
-    <script src="js/utilitarioCatalogoSociosAdministrador.js"></script>
+    <script src="js/utilitarioCatalogoSociosAdministrador.js "></script>
     <script src="js/socioscomerciales.js "></script>
     <script src="js/distribucion-cr.js "></script>
     <script src="js/formulario.js "></script>

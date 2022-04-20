@@ -1,4 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    /*display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 40px;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sct-registro {
+    display: flex;
+}
+
+#sct-registro form {
+    width: 250%;
+    padding: 40px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+#sct-registro form .fieldset {
+    margin-bottom: 25px;
+}
+
+#sct-registro form label {
+    width: 250px;
+    display: inline-block;
+}
+
+#sct-registro form input {
+    width: 250px;
+    height: 35px;
+}
+
+.btn-oscuro {
+    background: blueviolet;
+    color: white;
+    height: 35px;
+    width: 150px;
+    font-weight: bold;
+    border-color: blueviolet;
+}
+
+select {
+    width: auto;
+}
+
+main {
+    columns: 2;
+}
+
+.btn-oscuro {
+    background: blueviolet;
+    color: white;
+    height: 35px;
+    width: 150px;
+    font-weight: bold;
+    border-color: blueviolet;
+    margin: 25px;
+}
+
+
+/*body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -52,4 +123,4 @@ button {
 
 #cajitas {
     margin: 20px;
-}
+}*/

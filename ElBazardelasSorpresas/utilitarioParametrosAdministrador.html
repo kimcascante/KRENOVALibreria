@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/utilitarioCatalogolibrosAdministrador.cssx">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogos.css">
 
     <title>Cátalogo autores</title>
 </head>
@@ -41,105 +41,98 @@
     </section>
 
     <section id="sct-registro">
+        <form>
+            <div class="etiqueta-titulo">
+                <h1>Perfil de impuestos</h1>
+            </div>
 
-        <section id="sct-registro">
-            <form>
-                <div class="etiqueta-titulo">
-                    <h1>Perfil de impuestos</h1>
-                </div>
+            <div class="input-container">
+                <label for="txt-idimpuesto">Id_impuesto</label>
 
-                <div class="input-container">
-                    <label for="txt-idimpuesto">Id_impuesto</label>
+                <input type="number" id="txt-idimpuesto">
+            </div>
 
-                    <input type="number" id="txt-idimpuesto">
-                </div>
+            <div class="input-container">
+                <label for="txt-nombreImpuesto">Nombre impuesto</label>
+                <input type="text" id="txt-nombreImpuesto">
+            </div>
+            <div class="input-container">
+                <label for="txt-porcentajeImpuesto">Porcentaje impuesto</label>
+                <input type="number" id="txt-porcentajeImpuesto">
+            </div>
 
-                <div class="input-container">
-                    <label for="txt-nombreImpuesto">Nombre impuesto</label>
-                    <input type="text" id="txt-nombreImpuesto">
-                </div>
-                <div class="input-container">
-                    <label for="txt-porcentajeImpuesto">Porcentaje impuesto</label>
-                    <input type="number" id="txt-porcentajeImpuesto">
-                </div>
+            <div class="input-container">
+                <label for="slt-genero">Estado impuesto</label>
 
-                <div class="input-container">
-                    <label for="slt-genero">Estado impuesto</label>
-
-                    <select id="slt-genero">
+                <select id="slt-genero">
                         <option value="">-- Seleccione una opción --</option>   
                         <option value="1">Activo</option>
                         <option value="2">Inactivo</option>
                     </select>
-                </div>
+            </div>
 
-                <div class="btn-control">
-                    <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
-                </div>
+            <div class="btn-control">
+                <button type="button" id="btn-registrar" class="btn-oscuro">Guardar</button>
 
-                <div class="btn-control">
-                    <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
-                </div>
+                <button type="reset" id="btn-cancelar" class="btn-oscuro">Limpiar formulario</button>
+            </div>
 
-            </form>
-            <hr>
+        </form>
 
-        </section>
-        <hr>
-        <section id="sct-listar">
-            <h1>Impuestos registrados</h1>
-            <table id='tbl-listarImpuestos'>
-                <thead>
-                    <tr>
-                        <th>Id_impuesto</th>
-                        <th>Nombre impuesto</th>
-                        <th>Porcentaje</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
+    </section>
+    <section id="sct-listar">
+        <h1>Impuestos registrados</h1>
+        <table id='tbl-listarImpuestos'>
+            <thead>
+                <tr>
+                    <th>Id_impuesto</th>
+                    <th>Nombre impuesto</th>
+                    <th>Porcentaje</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
 
-                <tbody>
+            <tbody>
 
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>TOTAL DE REGISTROS: 2 ITEMS</td>
-                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
+                </tr>
 
-                </tfoot>
+            </tfoot>
 
-            </table>
-            <hr>
+        </table>
 
-            <a href="parametrosAdmin.html">
-                <i class="fa-solid fa-tags "></i>
-                <p>
-                    <strong>Regresar al menú parametros</strong><br>
-                </p>
-            </a>
+        <a href="parametrosAdmin.html">
+            <i class="fa-solid fa-tags "></i>
+            <p>
+                <button class="btn-oscuroL"><strong>Regresar al listado autores</strong><br></button>
+            </p>
+        </a>
 
-        </section>
+    </section>
 
-        <section id="sct-footer">
-            <footer>
-                <div class="dv-contacto">
-                    <label for="">Servicio al cliente</label>
-                    <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
-                    <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
-                    <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
-                </div>
+    <section id="sct-footer">
+        <footer>
+            <div class="dv-contacto">
+                <label for="">Servicio al cliente</label>
+                <a href="https://www.whatsapp.com/"><img src="img/icons/whatsapp.png" alt="WhatsApp" height="20" width="20"></a>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="Facebook" height="25" width="25"></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram" height="25" width="25"></a>
+            </div>
 
-                <div class="dv-derechos">
-                    <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
-                </div>
-            </footer>
-        </section>
+            <div class="dv-derechos">
+                <label for="">Diseñado y desarrollado por KRENOVA DEV. Todos los derechos reservados ©</label>
+            </div>
+        </footer>
+    </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
-        <script src="js/parametros.js "></script>
-        <script src="js/listarParametros.js "></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="js/utilitarioParametrosAdministrador.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="js/parametros.js "></script>
+    <script src="js/listarParametros.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/utilitarioParametrosAdministrador.js"></script>
 
 </body>
 
