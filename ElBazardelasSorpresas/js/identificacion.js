@@ -1,0 +1,1 @@
+let identificacion = { "title": "Identifica", "Documento": [{ "title": "Cédula de identidad" }, { "title": "Número de pasaporte" }, { "title": "Otro tipo identificación" }] }

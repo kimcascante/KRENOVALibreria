@@ -20,40 +20,47 @@
                 <h1>Configuración de perfil del cliente</h1>
             </div>
 
-            <form>
-                <h2>Datos personales</h2>
-                <div class="input-container">
-                    <label for="txt-nombreclienteuno">Primer nombre</label>
-                    <input type="text" id="txt-nombreclienteuno" autocomplete="off">
-                </div>
-                <div class="input-container">
-                    <label for="txt-nombreclientedos">Segundo nombre</label>
-                    <input type="text" id="txt-nombreclientedos" autocomplete="off">
-                </div>
-                <div class="input-container">
-                    <label for="txt-apellidouno">Primer Apellido</label>
-                    <input type="text" id="txt-apellidouno" autocomplete="off">
-                </div>
-                <div class="input-container">
-                    <label for="txt-apellidodos">Segundo Apellido</label>
-                    <input type="text" id="txt-apellidodos" autocomplete="off">
-                </div>
-                <div class="input-container">
+            <h2>Datos personales</h2>
+            <div class="input-container">
+                <label for="txt-nombreclienteuno">Primer nombre</label>
+                <input type="text" id="txt-nombreclienteuno" autocomplete="off">
+            </div>
+            <div class="input-container">
+                <label for="txt-nombreclientedos">Segundo nombre</label>
+                <input type="text" id="txt-nombreclientedos" autocomplete="off">
+            </div>
+            <div class="input-container">
+                <label for="txt-apellidouno">Primer Apellido</label>
+                <input type="text" id="txt-apellidouno" autocomplete="off">
+            </div>
+            <div class="input-container">
+                <label for="txt-apellidodos">Segundo Apellido</label>
+                <input type="text" id="txt-apellidodos" autocomplete="off">
+            </div>
+            <!--<div class="input-container">
                     <select id="slt-idencliente">
-                                <option value="">-- Seleccione una opción --</option>   
+                                <option value=" ">-- Seleccione una opción --</option>   
                                 <option value="1">Cédula de identidad</option>
                                 <option value="2">Número de pasaporte</option>
-                                <option value="3">Cédula de residencia</option>
+                                <option value="3">Otro tipo identificación</option>
                         </select>
                     <input type="text" id="txtidentifica">
-                </div>
-            </form>
+                </div>-->
+            <div class="input-container">
+                <label for='slt-idencliente'>Tipo de identificación</label>
+                <select id='slt-idencliente'>
+                   <option value="">-- Seleccione una opción --</option>   
+                </select>
+                <input type="text" id="txtidentifica">
+            </div>
+
+
+        </form>
 
 
 
 
-
-            <!--   <div class="input-container">
+        <!--   <div class="input-container">
                 <p>Lista de premios ganados:</p>
                 <p></p><textarea name="comentario" id="ctx-premiosganados">Adjuntar datos del premio</textarea></p>
             </div>
@@ -124,7 +131,7 @@
         </a>
     </section>-->
 
-            <!-- 
+        <!-- 
             <script src="js/paises.js "></script>
             <script src="js/completarPaises.js "></script>
             <script src="js/autores.js "></script>
@@ -132,12 +139,14 @@
             <script src="js/utilitarioCatalogoAutoresAdministrador.js "></script>-->
 
 
-            <script src="js/perfilusuarioregistrado.js "></script>
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+
 
 
 
     </section>
+    <script src="js/identificacion.js "></script>
+    <script src="js/perfilusuarioregistrado.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
 </body>
 
 </html>
