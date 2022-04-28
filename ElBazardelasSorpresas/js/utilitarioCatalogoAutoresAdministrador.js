@@ -1,14 +1,15 @@
 const botonRegistrar = document.getElementById('btn-registrar');
 const botonCancelar = document.getElementById('btn-cancelar');
-const idAutor = document.getElementById('txt-idautor');
-const fotoAutor = document.getElementById('txt-imagenAutor');
 const nombreAutor = document.getElementById('txt-nombreautor');
+const fotoAutor = document.getElementById('txt-imagenAutor');
 const listaPais = document.getElementById('slt-paises');
 const fechaNacimiento = document.getElementById('txt-fechanaci');
 const fechaDefuncion = document.getElementById('txt-fechadefu');
 const listaGenero = document.getElementById('slt-genero');
 const librosPublicados = document.getElementById('ctx-libropubli');
 const premiosGanados = document.getElementById('ctx-premiosganados');
+const sipremioNobel = document.getElementById('siGanaPremio');
+const nopremioNobel = document.getElementById('noGanaPremio');
 const fechaPremio = document.getElementById('fechaPremio');
 const resennaAutor = document.getElementById('ctx-resennautor');
 const libroEscrito = document.getElementById('ctx-libroescrito');
@@ -46,17 +47,12 @@ document.getElementById('siGanaPremio').addEventListener('click', function(e) {
 const validar = () => {
     let hayError = false;
 
-    if (idAutor.value == '') {
+    /*if (fotoAutor.value == '') {
         hayError = true;
+        
     } else {
 
-    }
-
-    if (fotoAutor.value == '') {
-        hayError = true;
-    } else {
-
-    }
+    }*/
 
     if (nombreAutor.value == '') {
         hayError = true;
@@ -124,19 +120,46 @@ const validar = () => {
             'text': 'Favor complete todos los campos'
         });
     } else {
-        Swal.fire({
-            'icon': 'success',
-            'title': 'Autor  registrado',
-            'text': 'Registro completado!'
-        }).then(() => {
-            //Redirecciona al listado de autores
-            window.location.href = 'catalogoAutorAdmin.html'
-        });
+        /* Swal.fire({
+             'icon': 'success',
+             'title': 'Autor  registrado',
+             'text': 'Registro completado!'
+         }).then(() => {
+             //Redirecciona al listado de autores
+             window.location.href = 'catalogoAutorAdmin.html'
+         });*/
+        registrarAutor();
+
+    }
+
+
+};
+
+/**FUNCION PENDIENTE DE MODIFICAR***/
+const registrarAutor = () => {
+    let data = {
+        "nombre": nombreAutor.value,
+        "foto": fotoAutor.value,
+        "paisnacimiento": listaPais.value,
+        "fechanacimiento": fechaNacimiento.value,
+        "fechadefuncion": fechaDefuncion.value,
+        "generopersona": listaGenero.value,
+        "librospublicados": librosPublicados.value,
+        "premiosganados": premiosGanados.value,
+        "sipremionobel": sipremioNobel.value,
+        "nopremionobel": nopremioNobel.value,
+        "fechanobel": fechaPremio.value,
+        "autorresenna": resennaAutor.value,
+        "librosescritos": libroEscrito.value
+
 
     };
+    registrarDatos('registrar-autor', data, 'catalogoAutorAdmin.html');
+};
+
+botonRegistrar.addEventListener('click', () => {
+    validar();
+});
 
 
-}
-
-
-botonRegistrar.addEventListener('click', validar);
+//botonRegistrar.addEventListener('click', validar);

@@ -43,10 +43,10 @@
     <section id="sct-registro">
         <form>
 
-            <div class="input-container">
-                <label for="txt-idautor">ID Autor</label>
 
-                <input type="text" id="txt-idautor">
+            <div class="input-container">
+                <label for="txt-nombreautor">Nombre del autor</label>
+                <input type="text" id="txt-nombreautor" autocomplete="off">
             </div>
 
             <div class="input-container">
@@ -55,10 +55,6 @@
                 <input type="file" id="txt-imagenAutor">
             </div>
 
-            <div class="input-container">
-                <label for="txt-nombreautor">Nombre del autor</label>
-                <input type="text" id="txt-nombreautor" autocomplete="off">
-            </div>
 
             <div class="input-container">
                 <label for="slt-paises">País de Nacimiento</label>
@@ -137,7 +133,6 @@
         <table id="tbl-listarAutor">
             <thead>
                 <tr>
-                    <th>ID Autor</th>
                     <th>Nombre autor</th>
                     <th>País Nacimiento</th>
                     <th>Fecha Nacimiento</th>
@@ -178,9 +173,11 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
     <script src="js/paises.js "></script>
     <script src="js/completarPaises.js "></script>
-    <script src="js/autores.js "></script>
+    <!--<script src="js/autores.js "></script>-->
     <script src="js/listarCatalogoAutores.js "></script>
     <script src="js/utilitarioCatalogoAutoresAdministrador.js "></script>
 
