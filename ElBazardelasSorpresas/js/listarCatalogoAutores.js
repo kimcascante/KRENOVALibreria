@@ -1,9 +1,9 @@
 const cuerpoTabla = document.querySelector('#tbl-listarAutor tbody');
-let listaAutor = [];
+let listaAutores = [];
 
 
 const inicializar = async() => {
-    listaAutor = await obtenerDatos('listar-autores');
+    listaAutores = await obtenerDatos('listar-autores');
     mostrarDatos();
 
 }
@@ -15,7 +15,7 @@ const mostrarDatos = () => {
     cuerpoTabla.innerHTML = '';
 
 
-    listaAutor.forEach(autor => {
+    listaAutores.forEach(autor => {
         let fila = cuerpoTabla.insertRow();
 
         fila.insertCell().textContent = autor.nombre;
@@ -29,3 +29,5 @@ const mostrarDatos = () => {
 
 
 };
+
+inicializar();
