@@ -19,8 +19,8 @@ const mostrarDatos = () => {
         let fila = cuerpoTabla.insertRow();
 
         fila.insertCell().textContent = autor.nombre;
-        fila.insertCell().textContent = autor.foto;
         fila.insertCell().textContent = autor.paisnacimiento;
+        fila.insertCell().textContent = autor.fechanacimiento;
 
 
 
