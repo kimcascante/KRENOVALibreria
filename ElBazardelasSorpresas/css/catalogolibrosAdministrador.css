@@ -137,3 +137,7 @@ tbody {
     height: 35px;
     border-radius: 10px;
 }
+
+.input-error {
+    border: 2px solid #B33771;
+}

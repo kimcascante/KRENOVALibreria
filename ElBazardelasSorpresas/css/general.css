@@ -127,3 +127,7 @@ h2 {
     align-self: center;
     margin: 30px;
 }
+
+.input-error {
+    border: 2px solid #B33771;
+}

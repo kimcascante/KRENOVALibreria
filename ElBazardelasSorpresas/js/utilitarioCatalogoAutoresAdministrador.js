@@ -56,60 +56,82 @@ const validar = () => {
 
     if (nombreAutor.value == '') {
         hayError = true;
+        nombreAutor.classList.add('input-error');
     } else {
+        nombreAutor.classList.remove('input-error');
 
     }
 
     if (listaPais.value == '') {
         hayError = true;
+        listaPais.classList.add('input-error');
     } else {
+        listaPais.classList.remove('input-error');
 
     }
 
     if (fechaNacimiento.value == '') {
         hayError = true;
+        fechaNacimiento.classList.add('input-error');
     } else {
+        fechaNacimiento.classList.remove('input-error');
 
     }
 
-    if (fechaDefuncion.value == '') {
+    if (fechaDefuncion.value == '' || fechaDefuncion.value < fechaNacimiento.value) {
         hayError = true;
+        fechaDefuncion.classList.add('input-error');
     } else {
+        fechaDefuncion.classList.remove('input-error');
 
     }
 
     if (listaGenero.value == '') {
         hayError = true;
+        listaGenero.classList.add('input-error');
     } else {
+        listaGenero.classList.remove('input-error');
 
     }
 
     if (librosPublicados.value == '') {
         hayError = true;
+        librosPublicados.classList.add('input-error');
     } else {
+        librosPublicados.classList.remove('input-error');
 
     }
 
     if (premiosGanados.value == '') {
         hayError = true;
+        premiosGanados.classList.add('input-error');
     } else {
+        premiosGanados.classList.remove('input-error');
 
     }
 
     if (fechaPremio.value == '' && habilita == 1) {
         hayError = true;
+        fechaPremio.classList.add('input-error');
     } else {
+        fechaPremio.classList.remove('input-error');
 
     }
 
     if (resennaAutor.value == '') {
         hayError = true;
+        resennaAutor.classList.add('input-error');
     } else {
+        resennaAutor.classList.remove('input-error');
 
     }
 
     if (libroEscrito.value == '') {
         hayError = true;
+        libroEscrito.classList.add('input-error');
+    } else {
+        libroEscrito.classList.remove('input-error');
+
     }
 
     //Validacion final
