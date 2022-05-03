@@ -1,6 +1,5 @@
 const botonRegistrar = document.getElementById('btn-registrar');
 const botonCancelar = document.getElementById('btn-cancelar');
-const inputIDsocio = document.getElementById('txt-idSocio');
 const inputImagenSocio = document.getElementById('txt-imagenSocio');
 const inputNombreSocio = document.getElementById('txt-nombreSocio');
 const inputFechaIngreso = document.getElementById('txt-fechaIngreso');
@@ -28,62 +27,73 @@ imprimir();
 const validar = () => {
     let hayError = false;
 
-    if (inputIDsocio.value == '') {
-        hayError = true;
-    } else {
-
-    }
-
     if (inputImagenSocio.value == '') {
         hayError = true;
+        inputImagenSocio.classList.add('input-error');
     } else {
+        inputImagenSocio.classList.remove('input-error');
 
     }
 
     if (inputNombreSocio.value == '') {
         hayError = true;
+        inputNombreSocio.classList.add('input-error');
     } else {
+        inputNombreSocio.classList.remove('input-error');
 
     }
 
     if (inputFechaIngreso.value == '') {
         hayError = true;
+        inputFechaIngreso.classList.add('input-error');
     } else {
+        inputFechaIngreso.classList.remove('input-error');
 
     }
 
     if (inputTelefono.value == '') {
         hayError = true;
+        inputTelefono.classList.add('input-error');
     } else {
+        inputTelefono.classList.remove('input-error');
 
     }
 
     if (inputCorreo.value == '') {
         hayError = true;
+        inputCorreo.classList.add('input-error');
     } else {
+        inputCorreo.classList.remove('input-error');
 
     }
 
     if (listaProvincia.value == '') {
         hayError = true;
+        listaProvincia.classList.add('input-error');
     } else {
+        listaProvincia.classList.remove('input-error');
 
     }
 
     if (listaCanton.value == '') {
         hayError = true;
+        listaCanton.classList.add('input-error');
     } else {
+        listaCanton.classList.remove('input-error');
 
     }
 
     if (listaDistrito.value == '') {
         hayError = true;
+        listaDistrito.classList.add('input-error');
     } else {
+        listaDistrito.classList.remove('input-error');
 
     }
 
     if (sennasSocio.value == '') {
         hayError = true;
+        sennasSocio.classList.add('input-error');
     }
 
     //Validacion final
@@ -100,7 +110,7 @@ const validar = () => {
             'text': 'Registro completado!'
         }).then(() => {
             //Redirecciona al listado de socios comerciales
-            window.location.href = 'sociosComercialesAdmin.html'
+            window.location.href = 'utilitarioCatalogoSociosAdministrador.html'
         });
 
     };
