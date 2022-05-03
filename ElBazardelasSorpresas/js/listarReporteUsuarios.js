@@ -1,22 +1,31 @@
 const cuerpoTabla = document.querySelector('#tbl-listarusuariosistema tbody');
 
+let listarUsuario = [];
 
+const inicializar = async() => {
+    listarUsuario = await obtenerDatos('listarUsuario');
+    mostrarDatos();
+}
 
 const mostrarDatos = () => {
     // Limpiar el cuerpo de la tabla
     cuerpoTabla.innerHTML = '';
 
 
-    listaUsuarios.forEach(usuario => {
+    listarUsuario.forEach(usuario => {
         let fila = cuerpoTabla.insertRow();
 
-        fila.insertCell().textContent = usuario.correo;
-        fila.insertCell().textContent = usuario.nombre;
-        fila.insertCell().textContent = usuario.nacimiento;
+        fila.insertCell().textContent = usuario.correoElectronico;
+        fila.insertCell().textContent = usuario.primerNombre;
+        fila.insertCell().textContent = usuario.primerApellido;
+        fila.insertCell().textContent = usuario.identificacion;
+        fila.insertCell().textContent = usuario.direccion;
+
 
     });
 
 
 };
 
-mostrarDatos();
+inicializar();
+//mostrarDatos();

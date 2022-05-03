@@ -11,13 +11,31 @@ body {
 }
 
 #sct-registro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#sct-registro form {
-    width: 250%;
-    padding: 40px;
+#personal {
+    width: auto;
+    height: auto;
+    background-color: #daa1ec;
+    margin: 25px;
+    padding: 50px;
+    border-radius: 25px;
 }
+
+label {
+    margin-bottom: 20px;
+}
+
+
+/*#sct-registro form {
+        width: 250%;
+        padding: 40px;
+    }*/
 
 h1 {
     font-weight: bold;
@@ -25,6 +43,14 @@ h1 {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 20px;
+}
+
+#sct-registro h2 {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 #sct-registro form .fieldset {
@@ -52,10 +78,6 @@ h1 {
 
 select {
     width: auto;
-}
-
-main {
-    columns: 2;
 }
 
 .btn-oscuro {
@@ -123,4 +145,4 @@ button {
 
 #cajitas {
     margin: 20px;
-}*/
+}

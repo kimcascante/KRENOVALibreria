@@ -20,110 +20,195 @@
         </div>
     </section>
 
+
     <header>
         <h1>Registro Usuario</h1>
-
     </header>
+
     <main>
+
         <section id="sct-registro">
-            <form id="registerUserForm">
 
-                <div class="fieldset">
-                    <label for="primerNombre">
-                        Primer Nombre
-                    </label>
-                    <input id="txt-nombre" type="text" name="firstName" placeholder="Primer Nombre" />
-                </div>
-                <div class="fieldset">
-                    <label for="segundoNombre">
-                            Segundo Nombre
-                        </label>
-                    <input id="txt-segundoNombre" type="text" name="segundoNombre" placeholder="Segundo Nombre" />
-                </div>
-                <div class="fieldset">
-                    <label for="segundoNombre">
-                            Primer Apellido
-                        </label>
-                    <input id="txt-apellido" type="text" name="Primer Apellido" placeholder="Primer Apellido" />
-                </div>
-                <div class="fieldset">
-                    <label for="numTelefono">
-                            Número de Teléfono
-                        </label>
-                    <input id="txt-telefono" type="text" name="Número de teléfono" placeholder="Número de teléfono" />
-                </div>
-
-                <div class="fieldset">
-                    <select name="" id="">
-                        <option value="0">-- Seleccione el tipo de identificación --</option>
-                        <option value="1">Cédula física</option>
-                        <option value="2">Cédula jurídica</option>
-                        <option value="3">Extranjero</option>
-                    </select>
-                    <input type="text" name="" id="txt-identificacion">
-                </div>
-
-                <div id="cajitas">
-                    <label for="">
-                            Foto de perfil
-                        </label>
-                    <input id="" type="file" name="imagen" />
-                </div>
-            </form>
-        </section>
-        <section id="sct-registro">
-            <form action="" id="registerUserForm">
-                <div class="fieldset">
-                    <label for="correo">
-                            Correo Electrónico
-                        </label>
-                    <input id="txt-correo" type="email" name="correo" placeholder="Correo" />
-                </div>
-                <div class="fieldset">
-                    <label for="pass">
-                            Contraseña
-                        </label>
-                    <input id="txt-contrasenna" type="password" name="Contraseña" placeholder="Contraseña" />
-                </div>
-                <div class="fieldset">
-                    <label for="confirmPass">
-                            Confirmación Contraseña
-                        </label>
-                    <input id="txt-confiContrasenna" type="password" name="Confirmación Contraseña" placeholder="Confirmación Contraseña" />
-                </div>
+            <section id="personal">
 
 
-                <div id="cajitas">
-                    <label for="dirección">Dirección exacta</label>
-                    <input id="txt-direccion" type="dirección" name="Dirección" placeholder="Dirección" required>
-                </div>
-                <div id="cajitas">
-                    <select id="slt-provincias">
+                <form id="registerUserForm">
+                    <h2>Datos personales</h2>
+
+                    <div id="cajitas">
+                        <label for="" id="">
+                                Foto de perfil
+                            </label>
+                        <input id="txt-foto" type="file" name="imagen" />
+                    </div>
+
+                    <div class="fieldset">
+                        <label for="primerNombre">
+                            Primer nombre
+                        </label>
+                        <input id="txt-nombre" type="text" name="firstName" placeholder="Primer Nombre" />
+                    </div>
+                    <div class="fieldset">
+                        <label for="segundoNombre">
+                                Segundo nombre
+                            </label>
+                        <input id="txt-segundoNombre" type="text" name="segundoNombre" placeholder="Segundo Nombre" />
+                    </div>
+                    <div class="fieldset">
+                        <label for="segundoNombre">
+                                Primer apellido
+                            </label>
+                        <input id="txt-apellido" type="text" name="Primer Apellido" placeholder="Primer Apellido" />
+                    </div>
+                    <div class="fieldset">
+                        <label id="" for="segundoApellido">
+                                Segundo apellido
+                            </label>
+                        <input id="txt-segundoApellido" type="text" name="Segundo Apellido" placeholder="Segundo Apellido" />
+                    </div>
+                    <div class="fieldset">
+                        <label for="numTelefono">
+                                Número de teléfono
+                            </label>
+                        <input id="txt-telefono" type="text" name="Número de teléfono" placeholder="Número de teléfono" />
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="">Género</label>
+                        <select id="slt-genero">
+                            <option value="">-- Seleccione un género --</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Fenemino</option>
+                            <option value="3">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="fieldset">
+                        <select name="" id="slt-identificacion">
+                            <option value="">-- Seleccione tipo de identificación --</option>
+                            <option value="1">Cédula física</option>
+                            <option value="2">Cédula jurídica</option>
+                            <option value="3">Extranjero</option>
+                        </select>
+                        <input id="txt-identificacion" type="text" name="Número de teléfono" placeholder="Número de identificación" />
+                    </div>
+
+
+
+
+                </form>
+            </section>
+
+            <section id="personal">
+                <form action="" id="registerUserForm">
+                    <h2>Datos para la cuenta</h2>
+
+                    <div class="fieldset">
+                        <label for="correo">
+                                Correo electrónico
+                            </label>
+                        <input id="txt-correo" type="email" name="correo" placeholder="Correo" />
+                    </div>
+                    <div class="fieldset">
+                        <label for="pass">
+                                Contraseña
+                            </label>
+                        <input id="txt-contrasenna" type="password" name="Contraseña" placeholder="Contraseña" />
+                    </div>
+                    <div class="fieldset">
+                        <label for="confirmPass">
+                                Confirmación contraseña
+                            </label>
+                        <input id="txt-confiContrasenna" type="password" name="Confirmación Contraseña" placeholder="Confirmación Contraseña" />
+                    </div>
+                </form>
+
+
+            </section>
+
+
+            <section id="personal">
+
+                <form action="">
+                    <h2>Datos de domicilio</h2>
+
+                    <div id="cajitas">
+                        <label for="dirección">Dirección exacta</label>
+                        <input id="txt-direccion" type="dirección" name="Dirección" placeholder="Dirección" required>
+                    </div>
+                    <div id="cajitas">
+                        <label for="">Provincia</label>
+                        <select id="slt-provincias">
                         <option value="">-- Seleccione una provincia --</option>
                         </select>
 
-                </div>
-                <div id="cajitas">
-                    <select id="slt-cantones">
+                    </div>
+                    <div id="cajitas">
+                        <label for="">Cantón</label>
+
+                        <select id="slt-cantones">
                     <option value="">-- Seleccione un cantón --</option>
                 </select>
-                </div>
-                <div id="cajitas">
-                    <select id="slt-distritos">
+                    </div>
+                    <div id="cajitas">
+                        <label for="">Distrito</label>
+
+                        <select id="slt-distritos">
+
                         <option value="">-- Seleccione un distrito --</option>
                     </select>
-                </div>
+                    </div>
+                </form>
+            </section>
 
-            </form>
+            <section id="personal">
 
+                <form action="">
+                    <h2>Datos del método de pago</h2>
 
+                    <div id="cajitas">
+                        <label for="dirección">Número de tarjeta</label>
+                        <input id="txt-numTarjeta" type="dirección" name="Dirección" placeholder="Número de tarjeta" required>
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="">Tipo de tarjeta</label>
+                        <select id="slt-tipoTarjeta">
+                        <option value="">-- Seleccione un tipo de tarjeta --</option>
+                        <option value="1">Visa</option>
+                        <option value="2">Mastercard</option>
+                        <option value="3">American express</option>
+                        </select>
+
+                    </div>
+                    <div id="cajitas">
+                        <label for="">Fecha de expiración</label>
+                        <input type="date" id="txt-fechaExp">
+
+                    </div>
+                    <div id="cajitas">
+                        <label for="">Titular de la tarjeta</label>
+
+                        <input id="txt-nombreTarjetaHabiente" type="calendar" name="Dirección" placeholder="Titular de la tarjeta" required>
+
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="">Código de verificación</label>
+
+                        <input id="txt-codigoVerifica" type="calendar" name="Dirección" placeholder="Código de verificación" required>
+
+                    </div>
+                </form>
+
+            </section>
+
+            <div class="fieldset">
+                <button id="btn-continuar" type="button" class="btn-oscuro">Continuar registro</button>
+            </div>
         </section>
 
-        <div class="fieldset">
-            <button id="btn-continuar" type="button" class="btn-oscuro">Continuar registro</button>
-        </div>
     </main>
-
 
     <section id="sct-footer">
         <footer>
@@ -141,9 +226,14 @@
     </section>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
     <script src="js/registroUsu.js"></script>
+
     <script src="js/distribucion-cr.js"></script>
     <script src="js/formulario.js"></script>
+
 </body>
 
 </html>

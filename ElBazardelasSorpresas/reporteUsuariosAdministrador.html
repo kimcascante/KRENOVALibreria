@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/homePageAdmin.css">
+    <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+
     <title>Reportes del sistema</title>
 </head>
 
@@ -17,7 +20,7 @@
         </div>
 
         <div class="div-titulo">
-            <h2 class="titulo-panel">Reportes del sistema</h2>
+            <h2 class="titulo-panel">Lista de usuarios</h2>
         </div>
 
         <div class="dv-opciones">
@@ -36,28 +39,24 @@
 
     </section>
 
-    <section>
-        <h1>Items del inventario</h1>
+    <section id="sct-listarLibros">
+        <h1>Lista de usuarios</h1>
 
         <table id='tbl-listarusuariosistema'>
             <thead>
                 <tr>
                     <th>Correo</th>
                     <th>Nombre</th>
-                    <th>Fecha Nacimiento</th>
+                    <th>Apellido</th>
+                    <th>Identificación</th>
+                    <th>Dirección</th>
                 </tr>
 
             </thead>
-
             <tbody>
 
             </tbody>
-            <tfoot>
-                <tr>
-                    <td>TOTAL DE REGISTROS: 2 ITEMS</td>
-                </tr>
 
-            </tfoot>
 
         </table>
 
@@ -82,7 +81,11 @@
         </footer>
     </section>
 
-    <script src="js/usuarios.js "></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
+
+    <!--<script src="js/usuarios.js "></script>-->
     <script src="js/listarReporteUsuarios.js "></script>
 
 </body>
