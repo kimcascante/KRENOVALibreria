@@ -147,7 +147,7 @@ const validar = () => {
 
 };
 
-const registrarAutor = () => {
+const registrarLibro = () => {
     let data = {
         "isbn": inputIsbn.value,
         "nombreLibro": inputNombreLibro.value,
