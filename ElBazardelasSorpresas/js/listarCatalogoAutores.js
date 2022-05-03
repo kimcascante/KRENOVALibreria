@@ -14,16 +14,16 @@ const mostrarDatos = () => {
     // Limpiar el cuerpo de la tabla
     cuerpoTabla.innerHTML = '';
 
-
+    let filtro = document.getElementById('txt-filtro').value.toLowerCase();
     listaAutores.forEach(autor => {
-        let fila = cuerpoTabla.insertRow();
+        if (autor.nombre.toLowerCase().includes(filtro)) {
+            let fila = cuerpoTabla.insertRow();
 
-        fila.insertCell().textContent = autor.nombre;
-        fila.insertCell().textContent = autor.paisnacimiento;
-        fila.insertCell().textContent = autor.fechanacimiento;
+            fila.insertCell().innerText = autor.nombre;
+            fila.insertCell().innerText = autor.paisnacimiento;
+            fila.insertCell().innerText = autor.fechanacimiento;
 
-
-
+        }
 
     });
 
@@ -31,3 +31,4 @@ const mostrarDatos = () => {
 };
 
 inicializar();
+document.getElementById('txt-filtro').addEventListener('keyup', mostrarDatos);
