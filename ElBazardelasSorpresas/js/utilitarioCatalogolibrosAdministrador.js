@@ -15,7 +15,7 @@ const inputPfinal = document.getElementById('txt-pfinal');
 const inputInvInicial = document.getElementById('txt-invinicial');
 
 
-const imprimir = () => {
+/*const imprimir = () => {
     let Isbn = inputIsbn.value;
     let nombrelibro = inputNombreLibro.value;
     let Autor = inputAutor.value;
@@ -25,7 +25,7 @@ const imprimir = () => {
     console.log('El nombre del libro es:', nombrelibro);
     console.log('El nombre del autor es:', Autor);
     console.log('La fecha de publicación es:', publicacion);
-};
+};*/
 
 //Creación de función para validación
 
@@ -119,8 +119,6 @@ const validar = () => {
 
     }
 
-
-
     if (inputInvInicial.value == '') {
         hayError = true;
         inputInvInicial.classList.add('input-error');
@@ -136,21 +134,38 @@ const validar = () => {
             'text': 'Favor revisar los campos resaltados'
         });
     } else {
-        Swal.fire({
+        /*Swal.fire({
             'icon': 'Exito',
             'title': 'Item registrado',
             'text': 'Registro completado!'
         }).then(() => {
             //Redirecciona al listado de libros
             window.location.href = 'catalogoLibrosAdministrador.html'
-        });
+        });*/
+        registrarLibro();
+    }
+
+};
+
+const registrarAutor = () => {
+    let data = {
+        "isbn": inputIsbn.value,
+        "nombreLibro": inputNombreLibro.value,
+        "imagenLibro": inputImagenLibro.value,
+        "autor": inputAutor.value,
+        "fechaPublicacion": inputFechaPublicacion.value,
+        "generoLiterario": listaGenero.value,
+        "editorial": inputEditorial.value,
+        "premiosGanados": inputPremios.value,
+        "resenna": inputResenna.value,
+        "descuento": inputDescuento.value,
+        "precio": inputPfinal.value,
+        "inventarioInicial": inputInvInicial.value
+
     };
+    registrarDatos('registrar-libros', data, 'catalogolibrosAdministrador.html');
+};
 
-}
-
-
-
-
-//imprimir();
-
-botonRegistrar.addEventListener('click', validar);
+botonRegistrar.addEventListener('click', () => {
+    validar();
+});
