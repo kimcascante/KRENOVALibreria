@@ -1,4 +1,11 @@
 const cuerpoTabla = document.querySelector('#tbl-listarLibros tbody');
+let listaLibros = [];
+
+const inicializar = async() => {
+    listaLibros = await obtenerDatos('listar-libros');
+    mostrarDatos();
+
+}
 
 
 
@@ -23,4 +30,4 @@ const mostrarDatos = () => {
 
 };
 
-mostrarDatos();
+inicializar();
