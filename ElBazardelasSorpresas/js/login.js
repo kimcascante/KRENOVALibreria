@@ -1,16 +1,20 @@
 //Constantes para extraer datos del formulario HTML
-const botonRegistrar = document.getElementById('btn-ingresar');
+const botonIngresar = document.getElementById('btn-ingresar');
 const inputCorreo = document.getElementById('txt-correo');
 const inputContrasenna = document.getElementById('txt-contrasenna');
+let listaUsuarios = [];
+let listaUsuarioAdmin = [];
 
-const imprimir = () => {
-    let correo = inputCorreo.value;
-    let contrasenna = inputContrasenna.value;
 
-    console.log('El correo es:', correo);
-    console.log('La contraseña es:', contrasenna);
+const inicializar = async() => {
+    listaUsuarios = await obtenerDatos('listarUsuario');
+    listaUsuarioAdmin = await obtenerDatos('listarUsuarioAdmin')
 
-};
+
+}
+
+inicializar();
+
 
 
 // Crear función de validación "validar"
@@ -31,36 +35,71 @@ const validar = () => {
     if (hayError) {
         Swal.fire({
             'icon': 'warning',
-            'title': 'Inicio de sesión fallido',
-            'text': 'Usuario o contraseña inválidos'
+            'title': 'Revise su información',
+            'text': 'Complete los campos obligatorios'
         });
     } else {
-        /*Swal.fire({
-            'icon': 'success',
-            'title': 'Inicio de sesión exitoso',
-            'text': 'Bienvenido al Bazar de las Sorpresas!' * /
-        })*/
-        /*.then(() => {*/
-        //Redirecciona al landing page del Bazar
 
-        if (inputCorreo.value == 'jmadriz@gmail.com' && inputContrasenna.value == 'madriz123') {
-            window.location.href = 'landingPageBazarRegistrado.html'
+        iniciosesion();
 
-        } else if (inputCorreo.value == 'pcastillo@gmail.com' && inputContrasenna.value == 'paola123') {
-            window.location.href = 'homePageAdmin.html'
 
+    }
+
+};
+
+
+let banderaCorreo = 0;
+let banderaContrasenna = 0;
+let banderaCorreoAdmin = 0;
+let banderaContrasennaAdmin = 0;
+
+//Iniciar sesión y validar contraseña
+const iniciosesion = () => {
+    //console.log('INICIO SESION');
+
+    listaUsuarios.forEach(usuario => {
+
+        if (usuario.correoElectronico == inputCorreo.value) {
+            banderaCorreo = 1;
+
+        }
+        if (usuario.contrasenna == inputContrasenna.value) {
+            banderaContrasenna = 1;
         } else {
-            Swal.fire({
-                'icon': 'warning',
-                'title': 'Inicio de sesión fallido',
-                'text': 'Usuario o contraseña inválidos'
-            })
+            banderaContrasenna += 2;
+        }
+    });
+
+    listaUsuarioAdmin.forEach(usuarioAdmi => {
+
+        if (usuarioAdmi.correoElectronico == inputCorreo.value) {
+            banderaCorreoAdmin = 1;
+
+        }
+        if (usuarioAdmi.contrasenna == inputContrasenna.value) {
+            banderaContrasennaAdmin = 1;
+        } else {
+            banderaContrasennaAdmin += 2;
         }
 
-        /* });*/
-    };
-}
+    });
 
-//imprimir();
+    if (banderaCorreo == 1 && banderaContrasenna == 1) {
+        window.location.href = 'landingPageBazarRegistrado.html'
 
-botonRegistrar.addEventListener('click', validar);
+    } else if (banderaCorreoAdmin == 1 && banderaContrasennaAdmin == 1) {
+        window.location.href = 'homePageAdmin.html'
+
+    } else {
+        Swal.fire({
+            'icon': 'warning',
+            'title': 'Fallo el inicio de sesión',
+            'text': 'Usuario o contraseña incorrecto'
+        });
+    }
+
+
+
+};
+
+botonIngresar.addEventListener('click', validar);
