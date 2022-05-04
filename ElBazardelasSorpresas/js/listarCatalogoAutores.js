@@ -14,7 +14,7 @@ const mostrarDatos = () => {
     // Limpiar el cuerpo de la tabla
     cuerpoTabla.innerHTML = '';
 
-    let filtro = document.getElementById('txt-filtro').value.toLowerCase();
+    let filtro = document.getElementById('txt-filtroAutor').value.toLowerCase();
     listaAutores.forEach(autor => {
         if (autor.nombre.toLowerCase().includes(filtro)) {
             let fila = cuerpoTabla.insertRow();
@@ -31,4 +31,4 @@ const mostrarDatos = () => {
 };
 
 inicializar();
-document.getElementById('txt-filtro').addEventListener('keyup', mostrarDatos);
+document.getElementById('txt-filtroAutor').addEventListener('keyup', mostrarDatos);

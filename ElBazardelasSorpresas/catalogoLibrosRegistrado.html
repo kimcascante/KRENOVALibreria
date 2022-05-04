@@ -87,74 +87,105 @@
     </div>
 
     <section id="sct-content">
-        <div>
-            <a href="perfilLibroRegistrado.html"><img src="img/books/laIslaHombresSolos.jpeg" alt="" height="250" width="200"></a>
-            <label id="lb-title" for="">La isla de los hombres solos</label>
-            <label for="">José León Sánchez</label>
-            <label for="">₡12000</label>
+        <div class="itemLibro">
+            <a href="perfilLibroRegistrado.html"><img class="lb-imagen" src="img/books/laIslaHombresSolos.jpeg" alt="" height="250" width="200"></a>
+            <label class="lb-title" for="">La isla de los hombres solos</label>
+            <label class="lb-nombreAutor" for="">José León Sánchez</label>
+            <label class="lb-precio" for="">₡12000</label>
+            <div class="dv-button">
+                <!--<a href="carrito.html"><button>Agregar al carrito</button></a>-->
+                <a><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilLibroYoSereUltima.html"><img src="img/books/yoSereUltima.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Yo seré la última</label>
             <label for="">Nadia Murad</label>
             <label for="">₡18500</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilLibroTortura.html"><img src="img/books/torturaCrimen.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Tortura: El Crimen de Colima</label>
             <label for="">José León Sánchez</label>
             <label for="">₡17000</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilLibroTenochtitlan.html"><img src="img/books/TENOCHTITLAN.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">TENOCHTITLAN</label>
             <label for="">José León Sánchez</label>
             <label for="">₡10000</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilDoctorSueño.html"><img src="img/books/doctorSuenno.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Doctor sueño</label>
             <label for="">Stephen King</label>
             <label for="">₡12800</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilFinGuardia.html"><img src="img/books/finDeGuardia.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Fin de guardia</label>
             <label for="">Stephen King</label>
             <label for="">₡9900</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilMrMercedes.html"><img src="img/books/mrMercedes.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Mr Mercedes</label>
             <label for="">Stephen King</label>
             <label for="">₡9900</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilQuienPierdeGana.html"><img src="img/books/Quien pierde paga.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Quien pierde gana</label>
             <label for="">Stephen King</label>
             <label for="">₡12000</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="perfilMamitaYunai.html"><img src="img/books/mamitaYunai.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Mamita Yunai</label>
             <label for="">Carlos Luis Fallas</label>
             <label for="">₡7500</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
-        <div>
+        <div class="itemLibro">
             <a href="divergente.html"><img src="img/books/divergente.jpeg" alt="" height="250" width="200"></a>
             <label id="lb-title" for="">Divergente</label>
             <label for="">Veronica Roth</label>
             <label for="">₡10800</label>
+            <div class="dv-button">
+                <a href="carrito.html"><button>Agregar al carrito</button></a>
+            </div>
         </div>
 
 
@@ -174,6 +205,11 @@
             </div>
         </footer>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/catalogoLibrosRegistrado.js"></script>
 </body>
 
 </html>
