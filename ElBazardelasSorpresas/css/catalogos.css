@@ -1,0 +1,84 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+            #sct-registro {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            #sct-registro form {
+                /*border: 2px solid goldenrod;*/
+                background-color: #daa1ec;
+                margin: 25px;
+                padding: 50px;
+                border-radius: 25px;
+                width: 700px;
+            }
+            
+            #cajitas {
+                margin: 20px;
+            }
+            
+            #cajitasbt {
+                text-align: center;
+            }
+            
+            textarea {
+                width: 300px;
+                height: 100px;
+            }
+            
+            #sct-registro form h1 {
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            
+            #sct-registro form .input-container {
+                margin-bottom: 25px;
+            }
+            
+            #sct-registro form label {
+                width: 250px;
+                display: inline-block;
+            }
+            
+            #sct-registro form input {
+                width: 250px;
+                height: 35px;
+            }
+            
+            .img-contenedor {
+                width: 5;
+                background-image: url('../imgs/photo-1534438327276-14e5300c3a48.webp');
+                background-size: cover;
+                background-position-x: 75%;
+            }
+            
+            select {
+                width: auto;
+            }
+            
+            #sct-registro form .input-container div {
+                margin-bottom: 25px;
+            }
+            
+            p {
+                font-weight: bold;
+                font-size: 18spx;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            
+            .input-error {
+                border: 2px solid #B33771;
+            }

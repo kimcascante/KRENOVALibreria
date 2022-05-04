@@ -1,4 +1,16 @@
 const cuerpoTabla = document.querySelector('#tbl-listarAutor tbody');
+<<<<<<< Updated upstream
+=======
+let listaAutores = [];
+
+
+const inicializar = async() => {
+    listaAutores = await obtenerDatos('listar-autores');
+    console.log(listaAutores);
+    mostrarDatos();
+
+}
+>>>>>>> Stashed changes
 
 
 

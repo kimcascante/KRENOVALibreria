@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/homePageAdmin.css">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
-    <title>Cátalogo autor</title>
+    <link rel="stylesheet" href="css/catalogos.css">
+    <title>Cátalogo autores</title>
 </head>
 
 <body>
@@ -56,9 +57,9 @@
                         <input type="text " id="txtnombreAutor ">
                     </div>
 
-                    <div class="input-buscalibro ">
+                    <!--<div class="input-buscalibro ">
                         <button type="button " id="btn-buscarlibro " class="btn-oscuro ">Buscar</button>
-                    </div>
+                    </div>-->
                 </div>
             </form>
         </section>
@@ -66,7 +67,7 @@
         <section id="sct-listarLibros">
             <h1>Inventario</h1>
 
-            <table id='tbl-listarAutor'>
+            <table id="tbl-listarAutor">
                 <thead>
                     <tr>
                         <th>ID Autor</th>
@@ -80,34 +81,117 @@
                 <tbody>
 
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td>Total de registros: 2</td>
-                    </tr>
-                </tfoot>
+
             </table>
         </section>
 
-        <section id="sct-control ">
+        <section id="sct-registro">
+            <section>
+                <form>
+                    <div class="cajitas">
+                        <label for="txt-nombreautor">Nombre del autor</label>
+                        <input type="text" id="txt-nombreautor" autocomplete="off">
+                    </div>
+
+                    <div class="cajitas">
+                        <label for="txt-imagenAutor">Foto autor</label>
+
+                        <input type="file" id="txt-imagenAutor">
+                    </div>
+
+
+                    <div class="cajitas">
+                        <label for="slt-paises">País de Nacimiento</label>
+                        <select id="slt-paises">
+                            <option value="">-- Seleccione una opción --</option>   
+                        </select>
+                    </div>
+
+                    <div class="cajitas">
+                        <label for="txt-fechanaci">Fecha Nacimiento</label>
+                        <input type="date" id="txt-fechanaci">
+                    </div>
+
+                    <div class="cajitas">
+                        <label for="txt-fechadefu">Fecha Defunción</label>
+                        <input type="date" id="txt-fechadefu">
+                    </div>
+
+                    <div class="cajitas">
+                        <label for="slt-genero">Género persona</label>
+
+                        <select id="slt-genero">
+                            <option value="">-- Seleccione una opción --</option>   
+                            <option value="1">Femenino</option>
+                            <option value="2">Masculino</option>
+                        </select>
+                    </div>
+
+                    <div class="cajitas">
+                        <p>Lista de libros publicados:</p>
+                        <p></p><textarea name="comentario" id="ctx-libropubli"></textarea></p>
+                    </div>
+
+                    <div class="cajitas">
+                        <p>Lista de premios ganados:</p>
+                        <p></p><textarea name="comentario" id="ctx-premiosganados"></textarea></p>
+                    </div>
+
+                    <div class="cajitas">
+                        <p>Ganador de premio nobel</p>
+                        <p>
+                            <input type="radio" name="radioNobelPaz" value="si" id="siGanaPremio">Sí
+                            <input type="radio" name="radioNobelPaz" value="no" id="noGanaPremio" checked>No
+                        </p>
+                        <p>
+                            <p>Fecha que gano el premio:</p>
+                            <input type="date" name="premio" id="fechaPremio" disabled="false">
+                        </p>
+                    </div>
+
+                    <div class="cajitas">
+                        <p>Reseña vida del autor:</p>
+                        <p></p><textarea name="comentario" id="ctx-resennautor"></textarea></p>
+                    </div>
+
+                    <div class="cajitas">
+                        <p>Libros escritos:</p>
+                        <p></p><textarea name="comentario" id="ctx-libroescrito"></textarea></p>
+                    </div>
+
+                    <div id="cajitasbt">
+                        <button type="button" id="btn-registrar" class="btn-oscuro">Registrar</button>
+                        <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='utilitarioCatalogoAutoresAdministrador.html' ">Limpiar formulario</button>
+
+
+                    </div>
+
+                </form>
+            </section>
+        </section>
+        <!--<section id="sct-control ">
             <form>
                 <div class="btn-control ">
                     <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
-                        <!--<i class="fa-solid fa-tags "></i>-->
-                        <button type="button">Nuevo</button>
-                    </a>
-                </div>
-                <div class="btn-control ">
-                    <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
-                        <button type="button">Modificar</button>
-                    </a>
-                </div>
-                <div class="btn-control ">
-                    <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
-                        <button type="button">Eliminar</button>
-                    </a>
-                </div>
-            </form>
-        </section>
+                        <i class="fa-solid fa-tags "></i>
+        <button type="button">Nuevo</button>
+        </a>
+        </div>
+        <div class="btn-control ">
+            <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
+                <button type="button">Modificar</button>
+            </a>
+        </div>
+        <div class="btn-control ">
+            <a href="utilitarioCatalogoAutoresAdministrador.html " class=btn-listalibros>
+                <button type="button">Eliminar</button>
+            </a>
+        </div>
+        </form>
+    </section>-->
+
+
+
 
     </section>
 
@@ -126,9 +210,15 @@
         </footer>
     </section>
 
-    <script src="js/autores.js "></script>
-    <script src="js/listarCatalogoAutores.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/servicio-general.js"></script>
+    <script src="js/paises.js "></script>
+    <script src="js/completarPaises.js "></script>
+    <!--<script src="js/autores.js "></script>-->
+    <script src="js/listarCatalogoAutores.js "></script>
+    <script src="js/utilitarioCatalogoAutoresAdministrador.js"></script>
+
 </body>
 
 </html>

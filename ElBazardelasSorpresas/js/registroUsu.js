@@ -202,7 +202,6 @@ const registrarUsuario = () => {
         "canton": selectCanton.value,
         "distrito": selectDistrito.value,
         "fotoPerfil": inputFoto.value,
-
         "numTarjeta": inputNumTarjeta.value,
         "tipoTarjeta": selectTipoTarjeta.value,
         "fechaExp": inputFechaExp.value,

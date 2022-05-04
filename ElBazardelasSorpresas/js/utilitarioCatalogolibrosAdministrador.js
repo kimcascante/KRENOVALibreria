@@ -16,7 +16,9 @@ const inputDescuento = document.getElementById('txt-descuento');
 const inputPfinal = document.getElementById('txt-pfinal');
 const inputInvInicial = document.getElementById('txt-invinicial');
 
+/*let generoSeleccionado;
 
+<<<<<<< Updated upstream
 const imprimir = () => {
     let Isbn = inputIsbn.value;
     let nombrelibro = inputNombreLibro.value;
@@ -28,6 +30,32 @@ const imprimir = () => {
     console.log('El nombre del autor es:', Autor);
     console.log('La fecha de publicación es:', publicacion);
 };
+=======
+const mostrarGeneros = () => {
+    listaGeneros.nombreGenero.forEach(genero => {
+        listaGenero.options.add(new Option(genero.nombreGenero));
+    });
+};
+
+mostrarGeneros(); */
+
+
+listaGenero.addEventListener('change', () => {
+        generoSeleccionado = listaGenero.value;
+        mostrarGeneros(generoSeleccionado);
+    })
+    /*const imprimir = () => {
+        let Isbn = inputIsbn.value;
+        let nombrelibro = inputNombreLibro.value;
+        let Autor = inputAutor.value;
+        let publicacion = inputFechaPublicacion.value;
+
+        console.log('El ISBN es:', Isbn);
+        console.log('El nombre del libro es:', nombrelibro);
+        console.log('El nombre del autor es:', Autor);
+        console.log('La fecha de publicación es:', publicacion);
+    };*/
+>>>>>>> Stashed changes
 
 //Creación de función para validación
 

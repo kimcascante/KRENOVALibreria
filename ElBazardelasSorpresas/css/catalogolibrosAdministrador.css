@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+body {
+    /*display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 40px;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #sct-buscarlibro {
     /*display: flex;*/
     width: 100%;
@@ -91,4 +99,52 @@ tbody {
 
 .dv-opciones div {
     margin: 10px;
+<<<<<<< Updated upstream
+=======
+}
+
+
+/*#sct-container {
+    height: 800px;
+}*/
+
+.btn-oscuro {
+    background: blueviolet;
+    color: white;
+    height: 35px;
+    width: 150px;
+    font-weight: bold;
+    border-color: blueviolet;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.btn-busca {
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-color: blueviolet;
+    border-radius: 10px;
+}
+
+.btn-oscuroL {
+    background: blueviolet;
+    color: white;
+    width: auto;
+    font-weight: bold;
+    border-color: blueviolet;
+    margin: 25px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.btn-oscuro:hover {
+    background: rgb(180, 145, 212);
+    border: blueviolet;
+    cursor: pointer;
+}
+
+.input-error {
+    border: 2px solid #B33771;
+>>>>>>> Stashed changes
 }

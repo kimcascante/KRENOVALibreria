@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/homePageAdmin.css">
     <link rel="stylesheet" href="css/catalogolibrosAdministrador.css">
+    <link rel="stylesheet" href="css/catalogos.css">
+
     <title>Cátalogo libros</title>
 </head>
 
@@ -81,6 +82,7 @@
 
                 </tbody>
 
+<<<<<<< Updated upstream
                 <tfoot>
                     <tr>
                         <td>
@@ -88,11 +90,95 @@
                         </td>
                     </tr>
                 </tfoot>
+=======
+>>>>>>> Stashed changes
 
             </table>
         </section>
 
-        <section id="sct-control">
+        <section id="sct-registro">
+            <section>
+                <form>
+                    <div id="cajitas">
+                        <label for="txt-isbn">ISBN</label>
+
+                        <input type="text" id="txt-isbn">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-nombrelibro">Nombre del libro</label>
+                        <input type="text" id="txt-nombrelibro" autocomplete="off">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-imagenLibro">Imagen del libro</label>
+
+                        <input type="file" id="txt-imagenlibro">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-autor">Autor/Autores</label>
+                        <input type="text" id="txt-autor">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-fechapubli">Fecha Publicación</label>
+                        <input type="date" id="txt-fechapubli">
+                    </div>
+                    <div id="cajitas">
+                        <label for="slt-genero">Género literario</label>
+
+                        <select id="slt-genero">
+                            <option value="">-- Seleccione una opción --</option> 
+                            <option value="1">Novela</option>  
+                        </select>
+                    </div>
+                    <div id="cajitas">
+                        <label for="txt-editorial">Editorial</label>
+                        <input type="text" id="txt-editorial">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-premios">Premios Ganados</label>
+                        <input type="text" id="txt-premios">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-resenna">Reseña literaria</label>
+                        <input type="text" id="txt-resenna">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-descuento">Descuento</label>
+                        <input type="number" id="txt-descuento">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-pfinal">Precio</label>
+                        <input type="number" id="txt-pfinal">
+                    </div>
+
+                    <div id="cajitas">
+                        <label for="txt-invinicial">Inventario inicial</label>
+                        <input type="number" id="txt-invinicial">
+                    </div>
+
+                    <div id="cajitasbt">
+                        <button type="button" id="btn-registrar" class="btn-oscuro">Registrar</button>
+
+                        <!--<button type="button" id="btn-modificar" class="btn-oscuro">Modificar</button>-->
+
+                        <button type="button" id="btn-cancelar" class="btn-oscuro" onclick="window.location.href='catalogolibrosAdministrador.html'">Limpiar formulario</button>
+                    </div>
+
+                </form>
+            </section>
+
+
+
+        </section>
+
+        <!--<section id="sct-control">
             <form action="">
                 <div class="btn-control">
                     <a href="utilitarioCatalogolibrosAdministrador.html"><button type="button">Nuevo</button></a>
@@ -106,8 +192,8 @@
                     <a href="utilitarioCatalogolibrosAdministrador.html"><button type="button">Eliminar</button></a>
                 </div>
 
-            </form>
-        </section>
+        </form>
+    </section>-->
     </section>
 
 
@@ -129,7 +215,13 @@
 
     <script src="js/libros.js"></script>
     <script src="js/listarCatalogolibros.js"></script>
+<<<<<<< Updated upstream
     <script src="js/cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+=======
+    <script src="js/generos.js"></script>
+    <script src="js/utilitarioCatalogolibrosAdministrador.js"></script>
+
+>>>>>>> Stashed changes
 </body>
 
 </html>
