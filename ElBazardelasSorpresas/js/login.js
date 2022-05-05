@@ -8,7 +8,8 @@ let listaUsuarioAdmin = [];
 
 const inicializar = async() => {
     listaUsuarios = await obtenerDatos('listarUsuario');
-    listaUsuarioAdmin = await obtenerDatos('listarUsuarioAdmin')
+    listaUsuarioAdmin = await obtenerDatos('listarUsuarioAdmin');
+
 
 
 }
@@ -16,10 +17,10 @@ const inicializar = async() => {
 inicializar();
 
 
-
 // Crear función de validación "validar"
 const validar = () => {
     let hayError = false;
+
 
     if (inputCorreo.value == '') {
         hayError = true;
@@ -43,31 +44,34 @@ const validar = () => {
         iniciosesion();
 
 
+
     }
 
 };
 
 
-let banderaCorreo = 0;
-let banderaContrasenna = 0;
-let banderaCorreoAdmin = 0;
-let banderaContrasennaAdmin = 0;
-
 //Iniciar sesión y validar contraseña
 const iniciosesion = () => {
     //console.log('INICIO SESION');
+    let banderaCorreo = 0;
+    let banderaContrasenna = 0;
+    let banderaCorreoAdmin = 0;
+    let banderaContrasennaAdmin = 0;
+
 
     listaUsuarios.forEach(usuario => {
 
         if (usuario.correoElectronico == inputCorreo.value) {
+            console.log('banderacorreo');
             banderaCorreo = 1;
 
         }
         if (usuario.contrasenna == inputContrasenna.value) {
             banderaContrasenna = 1;
-        } else {
-            banderaContrasenna += 2;
         }
+        /*else {
+                   banderaContrasenna += 2;
+               }*/
     });
 
     listaUsuarioAdmin.forEach(usuarioAdmi => {
@@ -78,13 +82,15 @@ const iniciosesion = () => {
         }
         if (usuarioAdmi.contrasenna == inputContrasenna.value) {
             banderaContrasennaAdmin = 1;
-        } else {
-            banderaContrasennaAdmin += 2;
         }
+        /*else {
+                   banderaContrasennaAdmin += 2;
+               }*/
 
     });
-
+    console.log(banderaCorreo, banderaContrasenna);
     if (banderaCorreo == 1 && banderaContrasenna == 1) {
+        console.log('LANDING USUARIO REGISTRADO');
         window.location.href = 'landingPageBazarRegistrado.html'
 
     } else if (banderaCorreoAdmin == 1 && banderaContrasennaAdmin == 1) {
