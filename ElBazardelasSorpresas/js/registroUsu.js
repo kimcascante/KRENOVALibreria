@@ -210,7 +210,7 @@ const registrarUsuario = () => {
         "codigoVerificacion": inputCodigoVerifica.value,
 
     }
-    registrarDatos('registrarUsuario', data, 'reporteUsuariosAdministrador.html');
+    registrarDatos('registrarUsuario', data, 'landingPageBazar.html');
 
 }
 
