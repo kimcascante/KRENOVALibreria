@@ -1,0 +1,87 @@
+#contenido {
+    height: 850px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cuadro {
+    height: 500px;
+    width: 800px;
+    border: 2px solid #000;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 70px;
+    background-color: rgb(216, 137, 216);
+}
+
+.titulo-principal {
+    font-size: 25px;
+    color: black;
+    font-family: tahoma;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.subtitulo-principal {
+    font-size: 17px;
+    color: black;
+    font-family: tahoma;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+#tabla {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fotoTabla {
+    height: 300px;
+    width: 200px;
+}
+
+#tabla {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text {
+    margin-bottom: 20px;
+    font-style: italic;
+}

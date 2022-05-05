@@ -1,0 +1,75 @@
+#contenido {
+    height: 850px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cuadro {
+    height: 700px;
+    width: 800px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(228, 167, 228);
+}
+
+.titulo-principal {
+    font-size: 2vw;
+    color: black;
+    font-family: tahoma;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.titulo-principal ::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    nav-left: 0;
+    width: 100%;
+    height: 100%;
+    color: blanchedalmond;
+}
+
+#tentacles {
+    width: 3em;
+}
+
+.fotoLibro {
+    height: 400px;
+    width: 300px;
+}
+
+.boton_1 {
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: normal;
+    color: white;
+    background-color: purple;
+    border-radius: 15px;
+}
+
+.botonEliminar:hover {
+    opacity: 0.6;
+    text-decoration: solid;
+}
+
+h1 {
+    margin-left: 15px;
+}

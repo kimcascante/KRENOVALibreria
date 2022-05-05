@@ -1,0 +1,214 @@
+#papeleta {
+    height: 80px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-principal {
+    font-size: 30px;
+    color: black;
+    font-family: tahoma;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#tabla {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fotoTabla {
+    height: 300px;
+    width: 200px;
+}
+
+#tabla {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#metodoPago {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+
+/*configuracion radios de metodos de pago*/
+
+.radio-toolbar {
+    margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+.radio-toolbar label:hover {
+    background-color: #dfd;
+}
+
+.radio-toolbar input[type="radio"]:focus+label {
+    border: 2px dashed #444;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: #bfb;
+    border-color: #4c4;
+}
+
+.card-body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sct-registro {
+    display: flex;
+    margin-top: 20px;
+    background-color: #a20cd4;
+    border-radius: 5%;
+    border: #444;
+    color: aliceblue;
+}
+
+#sct-registro form {
+    width: 100%;
+    padding: 40px;
+    /* border: 2px solid #000; */
+}
+
+#sct-registro form h1 {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+#sct-registro form .input-container {
+    margin-bottom: 25px;
+}
+
+.texto {
+    margin-bottom: 25px;
+}
+
+#ubicacion {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+
+/**/
+
+.fotoMapa {
+    height: 200px;
+    width: 600px;
+}
+
+.boton_1 {
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    background-color: purple;
+    border-radius: 15px;
+}
+
+.boton_1:hover {
+    opacity: 0.6;
+    text-decoration: solid;
+}
+
+#final {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.ct-tabla {
+    background-color: #a20cd4;
+    color: aliceblue;
+}
+
+.acomodo-des {
+    align-self: center;
+}
+
+.col-md-6 {
+    background-size: 80px;
+}
