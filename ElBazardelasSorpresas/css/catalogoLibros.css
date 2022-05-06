@@ -1,3 +1,8 @@
+    .panel-general {
+        display: flex;
+        flex-direction: row;
+    }
+    
     #sct-content div {
         padding: 25px;
         /* display: flex; */
@@ -34,3 +39,29 @@
     .tableTwo {
         border: 3px solid purple;
     }
+    
+    #contenidoCarrito .itemCarrito .shoppingCarItemsContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .btn-eliminar {
+        background-color: rebeccapurple;
+        border-radius: 5px;
+        padding: 5px 10px;
+        text-decoration: wavy;
+        color: white;
+    }
+    
+    .btn-comprar {
+        background-color: darkgreen;
+        border-radius: 5px;
+        padding: 5px 10px;
+        width: 100px;
+        height: 50px;
+        text-decoration: wavy;
+        color: white;
+    }
+    /*  #sct-content button:hover {
+        background-color: #d43e0c;
+    }*/

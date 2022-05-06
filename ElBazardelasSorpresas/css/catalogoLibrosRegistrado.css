@@ -23,14 +23,11 @@
         margin: 0;
         padding: 0;
     }
-    /* .itemLibro {
+    
+    .itemLibro {
         height: 100vh;
         width: 50%;
         columns: 2;
-    }*/
-    
-    .lb-cantidad {
-        background-color: blue;
     }
     
     .shoppingCarItemsContainer {
