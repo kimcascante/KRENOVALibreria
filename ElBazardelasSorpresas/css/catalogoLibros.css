@@ -1,13 +1,13 @@
     #sct-content div {
         padding: 25px;
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
     
     #sct-content {
-        columns: 2;
+        display: flex;
     }
     
     #sct-content label {
@@ -16,4 +16,21 @@
     
     #lb-title {
         font-weight: bold;
+    }
+    
+    .izquierda {
+        columns: 2;
+    }
+    
+    .tableOne {
+        border: 2px solid purple;
+    }
+    
+    h1 {
+        color: purple;
+        font-size: 25px;
+    }
+    
+    .tableTwo {
+        border: 3px solid purple;
     }
