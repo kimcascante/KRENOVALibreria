@@ -95,10 +95,9 @@ const validar = () => {
         inputContrasenna.classList.remove('input-error');
     }
 
-    if (inputConfirmaContrasenna.value == '') {
+    if (inputConfirmaContrasenna.value == '' || inputConfirmaContrasenna.value != inputContrasenna.value) {
         hayError = true;
         inputConfirmaContrasenna.classList.add('input-error');
-
     } else {
         inputConfirmaContrasenna.classList.remove('input-error');
     }
