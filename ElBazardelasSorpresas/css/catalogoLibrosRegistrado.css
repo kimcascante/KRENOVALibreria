@@ -25,3 +25,10 @@
 .lb-imagen:hover {
     transform: scale(1.2);
 }
+
+.botonNuevo {
+    width: 150px;
+    height: 30px;
+    background-color: #d4a20c;
+    border-radius: 15px;
+}
