@@ -99,7 +99,7 @@ const iniciosesion = () => {
     } else {
         Swal.fire({
             'icon': 'warning',
-            'title': 'Fallo el inicio de sesión',
+            'title': 'Falló el inicio de sesión',
             'text': 'Usuario o contraseña incorrecto'
         });
     }
