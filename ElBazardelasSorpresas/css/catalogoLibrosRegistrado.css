@@ -18,6 +18,10 @@
     font-weight: bold;
 }
 
+.lb-imagen {
+    transition: transform 0.5s;
+}
+
 .lb-imagen:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
