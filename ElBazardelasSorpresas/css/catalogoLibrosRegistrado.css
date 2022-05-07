@@ -1,34 +1,110 @@
-#sct-content div {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#sct-content {
-    columns: 2;
-}
-
-#sct-content label {
-    padding: 2px;
-}
-
-#lb-title {
-    font-weight: bold;
-}
-
-.lb-imagen {
-    transition: transform 0.5s;
-}
-
-.lb-imagen:hover {
-    transform: scale(1.2);
-}
-
-.botonNuevo {
-    width: 150px;
-    height: 30px;
-    background-color: #d4a20c;
-    border-radius: 15px;
-}
+    #sct-content div {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #sct-content {
+        columns: 2;
+    }
+    
+    #sct-content label {
+        padding: 2px;
+    }
+    
+    #lb-title {
+        font-weight: bold;
+    }
+    
+    .lb-imagen {
+        transition: transform 0.5s;
+    }
+    
+    .lb-imagen:hover {
+        transform: scale(1.2);
+    }
+    
+    .botonNuevo {
+        width: 150px;
+        height: 30px;
+        background-color: #d4a20c;
+        border-radius: 15px;
+    }
+    
+    .derecha {
+        width: auto;
+        height: auto;
+        background-color: #daa1ec;
+        margin: 25px;
+        padding: 50px;
+        border-radius: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .titulo-principal {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .btn-comprar {
+        width: 150px;
+        height: 30px;
+        background-color: #d4a20c;
+        border-radius: 15px;
+        align-self: center;
+    }
+    
+    .shoppingCarTotal {
+        margin: 20px;
+    }
+    
+    .shoppingCarItemsContainer {
+        margin: 20px;
+    }
+    
+    .titulo-principal {
+        margin: 20px;
+    }
+    
+    .itemCarrito {
+        text-align: center;
+    }
+    
+    .btn-eliminar {
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+        align-self: center;
+    }
+    
+    .txt-cantidad {
+        width: 10px;
+    }
+    
+    .columna-imagen,
+    .columna-titulo,
+    .columna-precio,
+    .columna-cantidad {
+        margin: 10px;
+    }
+    
+    .item-shoppingCar {
+        display: flex;
+        /*flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .columna-cantidad {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .cantidad-carrito {
+        width: 30px;
+    }

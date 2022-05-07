@@ -91,7 +91,7 @@ function addItemToShoppingCart(itemImagen, itemTitulo, itemPrecio, itemCantidad)
                                                 </div>
                                                 </div>
                                                 <div class="columna-titulo">
-                                                <label>Titulo</label>
+                                                <label></label>
                                                 <div class="lb-title" >${itemTitulo}</div>
                                                 </div>
                                                 <div class="columna-precio">
