@@ -26,7 +26,9 @@
 .dv-buscarLibro {
     display: flex;
     padding: 50px;
-    /*justify-content: space-between;*/
+    outline: 1px solid red;
+    justify-content: center;
+    align-items: center;
 }
 
 .dv-buscarLibro input {
