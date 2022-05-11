@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*#sct-registro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}*/
+
+#sct-buscarlibro {
+    /*display: flex;*/
+    width: 100%;
+    height: 200px;
+}
+
+.titulo-listadolibros {
+    font-size: 24px;
+    margin-left: 400px;
+    padding: 10px;
+}
+
+.dv-buscarLibro {
+    display: flex;
+    padding: 50px;
+    outline: 1px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.dv-buscarLibro input {
+    margin-right: 10px;
+    width: 200px;
+}
+
+.dv-buscaCatalogo {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#sct-listarLibros h1 {
+    margin: 10px;
+    font-size: x-large;
+}
+
+#sct-listarPromociones h1 {
+    margin: 10px;
+    font-size: x-large;
+}
+
+
+/*.listarLibros {
+    border-collapse: collapse;
+    border: 4px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}*/
+
+table {
+    margin: 15px;
+    border-collapse: collapse;
+    border: 4px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    text-align: left;
+    width: 80%;
+    height: auto;
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190)
+}
+
+thead {
+    font-size: 20px;
+}
+
+tbody {
+    font-size: 16px;
+}
+
+#sct-control {
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+
+.btn-control {
+    border-radius: 20px;
+    margin-left: 50px;
+    display: inline-block;
+    padding: 50px;
+    justify-content: space-between;
+    /*display: flex;
+    /*flex-direction: row;*/
+}
+
+.tbl-listarLibros {
+    border: 3px solid #000;
+    display: flex;
+    height: 100px;
+}
+
+.tbl-listarPromociones {
+    border: 3px solid #000;
+    display: flex;
+    height: 100px;
+}
+
+.dv-opciones div {
+    margin: 10px;
+}
+
+#sct-container {
+    height: 800px;
+}
+
+.btn-oscuro {
+    background: blueviolet;
+    color: white;
+    height: 35px;
+    width: 150px;
+    font-weight: bold;
+    border-color: blueviolet;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.btn-busca {
+    background: blueviolet;
+    color: white;
+    font-weight: bold;
+    border-color: blueviolet;
+    border-radius: 10px;
+}
+
+.btn-oscuroL {
+    background: blueviolet;
+    color: white;
+    width: auto;
+    font-weight: bold;
+    border-color: blueviolet;
+    margin: 25px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.input-error {
+    border: 2px solid #B33771;
+}
+
+*#sct-registro {
+    width: auto;
+    height: auto;
+    background-color: #daa1ec;
+    margin: 25px;
+    padding: 50px;
+    border-radius: 25px;
+}

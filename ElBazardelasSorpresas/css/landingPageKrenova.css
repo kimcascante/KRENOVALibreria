@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sct-top {
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin: 20px;
+}
+
+#sct-nav {
+    border: 2px solid #000;
+    height: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 40px;
+    background-color: #d40ca2;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+#sct-content div {
+    display: grid;
+    grid-row: 2;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-left: 22px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dv-diego p {
+    width: 250px;
+}
+
+#dv-luisD p {
+    width: 250px;
+}
+
+#dv-juank p {
+    width: 250px;
+}
+
+#dv-kim p {
+    width: 250px;
+}
+
+#dv-ale p {
+    width: 250px;
+}
+
+#dv-mision {
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#sct-footer {
+    border: 3px solid #000;
+    background-color: #d40ca2;
+}
+
+#sct-footer .dv-contacto {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sct-footer a {
+    margin-left: 25px;
+}
+
+#sct-footer .dv-derechos {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
